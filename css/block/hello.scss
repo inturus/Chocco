@@ -1,0 +1,59 @@
+.hello {
+    margin-top: 85px;
+    padding-bottom: 50px;
+    &::before{
+        content: '';
+        position: absolute;
+        width: 28.75rem;
+        height: 21.3125rem;
+        background-image: url(../../img/hello-section/right-leaves-and-berry.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        bottom: -3.5rem;
+        right: 0.6875rem;
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        width: 3.6875rem;
+        height: 7rem;
+        background-image: url(../../img/hello-section/left-leaf.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        bottom: -3rem;
+        left: 1.9rem;
+    }
+}
+
+
+.hello__head {
+    max-width: 353px;
+    font-size: 48px;
+    line-height: 58px;
+    color: white;
+}
+.hello__desc {
+    margin-top: 17px;
+    margin-bottom: 32px;
+    max-width: 353px;
+    font-size: 21px;
+    line-height: 25px;
+}
+.hello__pref-list {
+    margin-top: 64px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 512px;
+    .hello__pref-desc{
+        font-size: 16px;
+    }
+    .hello__pref-item {
+        max-width: 165px;
+        display: flex;
+        align-items: flex-start;
+    }
+    svg {
+        margin-right: 12px;
+    }
+}
