@@ -1,0 +1,69 @@
+@import url("block/header.css");
+@import url('block/hello.css');
+@import url('block/why.css');
+@import url('block/reviews.css');
+@import url('block/order.css');
+
+$black: #292929;
+$body: #666666;
+$green: #497870;
+
+* {
+    box-sizing: border-box;
+}
+
+button {
+    cursor: pointer;
+}
+
+html, body {
+    height: 100%;
+    font-family: "Alegreya Sans";
+    font-size: 18px;
+    color: $body;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-weight: normal;
+    color: $black;
+}
+h1, h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+.container {
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+.bg--blue {
+    background-color: #61C4D9;
+    background-image: url('../img/hello-section/Батончики.png'), url('../img/hello-section/leaves.png');
+   background-repeat: no-repeat, no-repeat;
+   background-size:  auto, contain;
+   background-position: 96% 44%, right bottom;
+   position: relative;
+    color: #fff;
+}
+
+.order {
+    border-radius:28px;
+    border: none;
+    background: #fff;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-decoration: none;
+    color:#365A49;
+	font-size:16px;
+    padding:20px 40px;
+}
