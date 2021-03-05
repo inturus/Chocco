@@ -43,3 +43,8 @@ address:before {
 .menu .menu__item:last-child {
   margin-right: 0;
 }
+
+.menu__link {
+  text-decoration: none;
+  color: white;
+}
