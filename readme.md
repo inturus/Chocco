@@ -1,0 +1,1 @@
+# Stydy project for loftschool

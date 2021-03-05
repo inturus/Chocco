@@ -1,0 +1,70 @@
+.why .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.why::before {
+  content: "";
+  position: absolute;
+  width: 190px;
+  height: 314px;
+  background-image: url(../../img/why-section/leaf-why.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  bottom: -25rem;
+  left: 0;
+}
+.why::after {
+  content: "";
+  position: absolute;
+  width: 161px;
+  height: 315px;
+  background-image: url(../../img/why-section/raspberry.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  bottom: -40rem;
+}
+
+.why__head {
+  margin-top: 100px;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 58px;
+  letter-spacing: 0px;
+}
+
+.why__desc {
+  margin-top: 20px;
+  max-width: 436px;
+  color: #666666;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.why__list {
+  margin-top: 50px;
+  margin-bottom: 115px;
+  display: flex;
+}
+
+.why__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.why__item .why__item-desc {
+  text-align: center;
+  margin-top: 18px;
+}
+.why__item .why__item-head {
+  font-size: 27px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  margin-top: 20px;
+}
+
+.svg-dots {
+  margin-top: 50px;
+}
