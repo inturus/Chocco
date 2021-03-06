@@ -22,6 +22,7 @@ textarea:focus, input[type=text]:focus, input[type=number]:focus {
     url(../../img/cta-section/leaf.png) 98% 96%/135px no-repeat, 
     url('../../img/cta-section/order-gb.png') 50%/cover no-repeat;
     height: 100vh;
+    min-height: 650px;
     &::before {
         content: '';
         position: absolute;

@@ -1,8 +1,9 @@
 .reviews {
   text-align: center;
-  padding-bottom: 63px;
-  background: url(../../img/reviews-section/reviews-berries.png) 97% top/136px no-repeat;
+  padding: 63px 0;
+  background: url(../../img/reviews-section/reviews-berries.png) 97% 10%/136px no-repeat;
   height: 100vh;
+  min-height: 650px;
 }
 .reviews::after {
   content: "";

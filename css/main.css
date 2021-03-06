@@ -55,6 +55,7 @@ ul li {
   position: relative;
   color: #fff;
   height: 100vh;
+  min-height: 650px;
 }
 
 .order {
