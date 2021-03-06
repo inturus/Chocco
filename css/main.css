@@ -4,6 +4,7 @@
 @import url("block/why.css");
 @import url("block/reviews.css");
 @import url("block/order.css");
+@import url("block/fixed-menu.css");
 * {
   box-sizing: border-box;
 }
@@ -53,6 +54,7 @@ ul li {
   background-position: 96% 44%, right bottom;
   position: relative;
   color: #fff;
+  height: 100vh;
 }
 
 .order {

@@ -1,5 +1,6 @@
 .why {
   background: url("../../img/why-section/leaf-why.png") 0 50%/191px no-repeat;
+  height: 100vh;
 }
 .why .container {
   display: flex;

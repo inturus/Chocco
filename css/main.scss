@@ -3,6 +3,7 @@
 @import url('block/why.css');
 @import url('block/reviews.css');
 @import url('block/order.css');
+@import url('block/fixed-menu.css');
 
 $black: #292929;
 $body: #666666;
@@ -54,6 +55,7 @@ ul li {
    background-position: 96% 44%, right bottom;
    position: relative;
     color: #fff;
+    height: 100vh;
 }
 
 .order {

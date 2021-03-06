@@ -1,3 +1,4 @@
+
 .hello {
     margin-top: 85px;
     padding-bottom: 50px;
@@ -53,7 +54,11 @@
         display: flex;
         align-items: flex-start;
     }
-    svg {
+    img {
         margin-right: 12px;
     }
+}
+
+.hello__icon {
+    width: 37px;
 }

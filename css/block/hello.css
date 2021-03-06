@@ -55,6 +55,10 @@
   display: flex;
   align-items: flex-start;
 }
-.hello__pref-list svg {
+.hello__pref-list img {
   margin-right: 12px;
+}
+
+.hello__icon {
+  width: 37px;
 }

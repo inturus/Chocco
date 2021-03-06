@@ -2,6 +2,7 @@
   text-align: center;
   padding-bottom: 63px;
   background: url(../../img/reviews-section/reviews-berries.png) 97% top/136px no-repeat;
+  height: 100vh;
 }
 .reviews::after {
   content: "";

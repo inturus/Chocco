@@ -1,18 +1,5 @@
-address {
-  font-size: 22px;
-  font-style: normal;
-}
-address:before {
-  content: "";
-  background: url("../../img/phone.png");
-  width: 14px;
-  height: 14px;
-  display: inline-block;
-  margin-right: 6px;
-}
-
 .chocco {
-  max-width: 55px;
+  width: 55px;
 }
 .chocco .chocco__list {
   display: flex;
@@ -44,7 +31,19 @@ address:before {
   margin-right: 0;
 }
 
-.menu__link {
+a {
   text-decoration: none;
   color: white;
+}
+
+.phone {
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+  font-style: normal;
+}
+
+.phone__icon-elem {
+  width: 14px;
+  margin-right: 6px;
 }

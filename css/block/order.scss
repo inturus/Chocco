@@ -18,7 +18,10 @@ textarea:focus, input[type=text]:focus, input[type=number]:focus {
 
 
 .cta {
-    background: url('../../img/cta-section/blackberry.png') 5% 95%/47px no-repeat, url(../../img/cta-section/leaf.png) 98% 96%/135px no-repeat, url('../../img/cta-section/order-gb.png') 50%/cover no-repeat;
+    background: url('../../img/cta-section/blackberry.png') 5% 95%/47px no-repeat, 
+    url(../../img/cta-section/leaf.png) 98% 96%/135px no-repeat, 
+    url('../../img/cta-section/order-gb.png') 50%/cover no-repeat;
+    height: 100vh;
     &::before {
         content: '';
         position: absolute;
@@ -48,12 +51,15 @@ textarea:focus, input[type=text]:focus, input[type=number]:focus {
     width: 100%;
     color: $green;
 }
-.form__left, .form__right {
+.form__col {
     max-width: 48%;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     flex-wrap: wrap;
+    &.form__col:first-child {
+        max-height: 270px;
+    }
     div {
         margin-top: 2px;
     }
@@ -63,9 +69,7 @@ textarea:focus, input[type=text]:focus, input[type=number]:focus {
         border-radius: 5px;
     }
 }
-.form__left {
-    max-height: 270px;
-}
+
 .form__first-name{
     max-width: 100%;
     display: flex;
@@ -99,7 +103,7 @@ textarea:focus, input[type=text]:focus, input[type=number]:focus {
     width: 100%;
     .form__comment {
         width: 100%;
-        min-height:163px;
+        min-height:155px;
         resize: none;
         overflow: auto;
     }
