@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .hello {
   margin-top: 85px;
   padding-bottom: 50px;
@@ -61,4 +62,51 @@
 
 .hello__icon {
   width: 37px;
+}
+
+@media (max-width: 768px) {
+  .hello {
+    text-align: center;
+    margin-top: 510px;
+  }
+  .hello .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 2rem;
+  }
+  .hello::after {
+    display: none;
+  }
+  .hello::before {
+    display: none;
+  }
+
+  .hello__head {
+    max-width: 100%;
+  }
+
+  .hello__pref-list {
+    display: none;
+  }
+}
+.bg--blue {
+  background-color: #61C4D9;
+  background-image: url("../../img/hello-section/Батончики.png"), url("../../img/hello-section/leaves.png");
+  background-repeat: no-repeat, no-repeat;
+  background-size: auto, contain;
+  background-position: 96% 44%, right bottom;
+  position: relative;
+  color: #fff;
+  height: 100vh;
+  min-height: 650px;
+}
+@media (max-width: 768px) {
+  .bg--blue {
+    min-height: 1000px;
+    background-image: url("../../img/hello-section/right-leaves-and-berry.png"), url("../../img/hello-section/Батончики.png"), url("../../img/hello-section/leaves.png");
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 20rem, 20rem, 30rem;
+    background-position: 65% 40%, center 30%, right 30%;
+  }
 }
