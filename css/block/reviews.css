@@ -81,3 +81,39 @@
   border-radius: 50%;
   width: 74px;
 }
+
+@media (max-width: 768px) {
+  .reviews {
+    text-align: center;
+    padding: 63px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url(../../img/reviews-section/reviews-berries.png) 97% 0%/136px no-repeat;
+    min-height: 1000px;
+  }
+  .reviews .container {
+    padding: 0 1.2rem;
+  }
+  .reviews::after {
+    background-image: url(../../img/reviews-section/pattern.png);
+    bottom: -140rem;
+  }
+
+  .reviews__block {
+    flex-direction: column;
+  }
+
+  .reviews__img {
+    width: 7.2rem;
+    margin-bottom: 32px;
+  }
+
+  .reviews__block-text {
+    margin-left: 0;
+  }
+
+  .reviews__title, .reviews__desc, .reviews__name {
+    text-align: center;
+  }
+}

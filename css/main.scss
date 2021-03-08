@@ -47,17 +47,8 @@ ul li {
     margin: 0 auto;
 }
 
-.bg--blue {
-    background-color: #61C4D9;
-    background-image: url('../img/hello-section/Батончики.png'), url('../img/hello-section/leaves.png');
-   background-repeat: no-repeat, no-repeat;
-   background-size:  auto, contain;
-   background-position: 96% 44%, right bottom;
-   position: relative;
-    color: #fff;
-    height: 100vh;
-    min-height: 650px;
-}
+
+
 
 .order {
     border-radius:28px;
@@ -69,5 +60,8 @@ ul li {
     color:#365A49;
 	font-size:16px;
     padding:20px 40px;
+    &:hover {
+        color:#497870;
+    }
 }
 

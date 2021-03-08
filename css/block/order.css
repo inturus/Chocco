@@ -1,12 +1,12 @@
-@charset "UTF-8";
 textarea {
   border: none;
   border-radius: 5px;
+  outline: none;
 }
 
 textarea:active, input[type=text]:active, input[type=number]:active {
-  outline: none;
   border: 3px solid #DEE2BD;
+  transition: 0.4s;
 }
 
 textarea:focus, input[type=text]:focus, input[type=number]:focus {
@@ -133,16 +133,19 @@ textarea:focus, input[type=text]:focus, input[type=number]:focus {
   text-align: right;
 }
 .form__btn button {
-  margin-left: -1px;
   border-radius: 28px;
   border: none;
-  background: #497870;
   font-weight: 800;
   text-transform: uppercase;
   text-decoration: none;
-  color: white;
+  color: #365A49;
   font-size: 16px;
   padding: 20px 40px;
+  background: #497870;
+  color: white;
+}
+.form__btn button:hover {
+  background: #2E4E3F;
 }
 .form__btn button:last-child {
   background: none;
@@ -150,15 +153,16 @@ textarea:focus, input[type=text]:focus, input[type=number]:focus {
   font-weight: normal;
   text-transform: none;
 }
+.form__btn button:last-child:hover {
+  color: #000;
+}
 
-/* для элемента input c type="checkbox" */
 .custom-checkbox > input {
   position: absolute;
   z-index: -1;
   opacity: 0;
 }
 
-/* для элемента label, связанного с .custom-checkbox */
 .custom-checkbox > span {
   display: inline-flex;
   align-items: center;
@@ -166,7 +170,6 @@ textarea:focus, input[type=text]:focus, input[type=number]:focus {
           user-select: none;
 }
 
-/* создание в label псевдоэлемента before со следующими стилями */
 .custom-checkbox > span::before {
   content: "";
   display: inline-block;
@@ -182,30 +185,25 @@ textarea:focus, input[type=text]:focus, input[type=number]:focus {
   background-size: 50% 50%;
 }
 
-/* стили для активного чекбокса (при нажатии на него) */
 .custom-checkbox > input:not(:disabled):active + span::before {
   background-color: #b3d7ff;
   border-color: #b3d7ff;
 }
 
-/* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
 .custom-checkbox > input:focus:not(:checked) + span::before {
   background: #fff;
   border-color: #80bdff;
 }
 
-/* стили для чекбокса, находящегося в состоянии checked */
 .custom-checkbox > input:checked + span::before {
   background-color: #fff;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23497870' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
 }
 
-/* стили для чекбокса, находящегося в состоянии disabled */
 .custom-checkbox > input:disabled + span::before {
   background-color: #fff;
 }
 
-/* для элемента input c type="radio" */
 .custom-radio > input {
   position: absolute;
   z-index: -1;
@@ -220,7 +218,6 @@ textarea:focus, input[type=text]:focus, input[type=number]:focus {
   margin-bottom: 21px;
 }
 
-/* для элемента label связанного с .custom-radio */
 .custom-radio > span {
   display: inline-flex;
   align-items: center;
@@ -228,7 +225,6 @@ textarea:focus, input[type=text]:focus, input[type=number]:focus {
           user-select: none;
 }
 
-/* создание в label псевдоэлемента  before со следующими стилями */
 .custom-radio > span::before {
   content: "";
   display: inline-block;
@@ -244,18 +240,45 @@ textarea:focus, input[type=text]:focus, input[type=number]:focus {
   background-size: 50% 50%;
 }
 
-/* стили для активной радиокнопки (при нажатии на неё) */
 .custom-radio > input:not(:disabled):active + span::before {
   background-color: #b3d7ff;
   border-color: #b3d7ff;
 }
 
-/* стили для радиокнопки, находящейся в состоянии checked */
 .custom-radio > input:checked + span::before {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23497870'/%3e%3c/svg%3e");
 }
 
-/* стили для радиокнопки, находящейся в состоянии disabled */
 .custom-radio > input:disabled + span::before {
   background-color: #e9ecef;
+}
+
+@media (max-width: 768px) {
+  .cta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 1000px;
+    background: url("../../img/cta-section/order-gb.png") 50%/cover no-repeat;
+  }
+
+  .form__wrap {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 26rem;
+    margin: 0 auto;
+  }
+
+  .form__col {
+    max-width: 100%;
+  }
+
+  .form__btn {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
 }

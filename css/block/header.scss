@@ -1,15 +1,7 @@
 .chocco {
     width: 55px;
-    .chocco__list {
-        display: flex;
-        flex-wrap: wrap;
-    }
 }
 
-.chocco__item {
-    margin-right: 3px;
-    width: 15px;
-}
 
 .header{
     padding-top: 25px;
@@ -43,4 +35,22 @@ a {
 .phone__icon-elem {
     width: 14px;
     margin-right: 6px;
+}
+.hamburger {
+    display: none;
+}
+
+@media (max-width:768px) {
+    .header {
+        .container {
+            padding: 0 2rem;
+        }
+    }
+    .hamburger {
+        display: block;
+        align-self: flex-start;
+    }
+    .menu, address {
+        display: none;
+    }
 }
