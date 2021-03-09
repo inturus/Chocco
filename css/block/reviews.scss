@@ -82,6 +82,9 @@ $green: #497870;
     border-radius: 50%;
     width: 74px;
 }
+.reviews__name-mob {
+    display: none;
+}
 
 @media (max-width:768px) {
     .reviews {
@@ -113,5 +116,34 @@ $green: #497870;
     }
     .reviews__title, .reviews__desc, .reviews__name {
         text-align: center;
+    }
+}
+
+@media (max-width:480px) {
+    .reviews {
+        padding: 0 0.5rem;
+        background: url(../../img/reviews-section/reviews-berries.png) 108% 15%/136px no-repeat;
+        .container {
+            padding: 0;
+        }
+        &::after {
+
+        }
+        .reviews__block {
+            padding-bottom: 0.4rem;
+        }
+        .reviews__desc {
+            margin-bottom: 0;
+        }
+        .reviews__name-mob {
+            font-weight: 500;
+            color: $black;
+            margin-top: 0.6rem;
+            margin-bottom: 2.7rem;
+            display: block;
+        }
+        .reviews__name {
+            display: none;
+        }
     }
 }

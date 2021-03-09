@@ -108,4 +108,7 @@
    background-size: 20rem, 20rem, 30rem;
    background-position:65% 40%, center 30%, right 30%;
     }
+    @media (max-width:480px) {
+        min-height: 55.5rem;
+    }
 }

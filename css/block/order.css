@@ -15,30 +15,30 @@ textarea:focus, input[type=text]:focus, input[type=number]:focus {
 }
 
 .cta {
-  background: url("../../img/cta-section/blackberry.png") 5% 95%/47px no-repeat, url(../../img/cta-section/leaf.png) 98% 96%/135px no-repeat, url("../../img/cta-section/order-gb.png") 50%/cover no-repeat;
+  background: url("../../img/cta-section/blackberry.png") 5% 95%/2.6rem no-repeat, url(../../img/cta-section/leaf.png) 98% 96%/7.5rem no-repeat, url("../../img/cta-section/order-gb.png") 50%/cover no-repeat;
   height: 100vh;
-  min-height: 650px;
+  min-height: 36.1rem;
 }
 .cta::before {
   content: "";
   position: absolute;
   display: block;
-  width: 196px;
+  width: 10.8rem;
   background: url("../../img/cta-section/leaf-berry.png");
 }
 
 .cta .container {
-  padding: 52px 0 85px;
+  padding: 2.8rem 0 4.7rem;
 }
 
 .cta__head {
   text-align: center;
-  font-size: 48px;
+  font-size: 2.8rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 58px;
+  line-height: 3.2rem;
   color: #497870;
-  margin-bottom: 59px;
+  margin-bottom: 3.27rem;
 }
 
 .form__wrap {
@@ -58,13 +58,13 @@ textarea:focus, input[type=text]:focus, input[type=number]:focus {
   flex-wrap: wrap;
 }
 .form__col.form__col:first-child {
-  max-height: 270px;
+  max-height: 15rem;
 }
 .form__col div {
-  margin-top: 2px;
+  margin-top: 0.1rem;
 }
 .form__col input {
-  min-height: 58px;
+  min-height: 3.2rem;
   border: none;
   border-radius: 5px;
 }
@@ -73,7 +73,7 @@ textarea:focus, input[type=text]:focus, input[type=number]:focus {
   max-width: 100%;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 10px;
+  margin-bottom: 0.5rem;
 }
 .form__first-name div {
   max-width: 49%;
@@ -82,7 +82,7 @@ textarea:focus, input[type=text]:focus, input[type=number]:focus {
   width: 100%;
 }
 .form__first-namediv:first-child {
-  margin-right: 20px;
+  margin-right: 1.1rem;
 }
 
 .form__street {
@@ -107,25 +107,24 @@ textarea:focus, input[type=text]:focus, input[type=number]:focus {
 }
 .form__comm .form__comment {
   width: 100%;
-  min-height: 155px;
+  min-height: 8.6rem;
   resize: none;
   overflow: auto;
 }
 
 .form__check-rad {
-  min-height: 65px;
-  padding-top: 30px;
+  min-height: 3.6rem;
+  padding-top: 1.6rem;
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 25px;
+  margin-bottom: 1.38rem;
 }
 .form__check-rad .input {
   width: 49%;
 }
 .form__check-rad input {
   min-height: auto;
-  font-size: 18px;
-  line-height: 22px;
+  line-height: 1.2rem;
 }
 
 .form__btn {
@@ -139,8 +138,8 @@ textarea:focus, input[type=text]:focus, input[type=number]:focus {
   text-transform: uppercase;
   text-decoration: none;
   color: #365A49;
-  font-size: 16px;
-  padding: 20px 40px;
+  font-size: 0.8rem;
+  padding: 1.1rem 2.2rem;
   background: #497870;
   color: white;
 }
@@ -211,11 +210,11 @@ textarea:focus, input[type=text]:focus, input[type=number]:focus {
 }
 
 .custom-radio:first-child {
-  margin-right: 23px;
+  margin-right: 1.27rem;
 }
 
 .custom-radio {
-  margin-bottom: 21px;
+  margin-bottom: 1.16rem;
 }
 
 .custom-radio > span {
@@ -259,7 +258,7 @@ textarea:focus, input[type=text]:focus, input[type=number]:focus {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 1000px;
+    min-height: 55.5rem;
     background: url("../../img/cta-section/order-gb.png") 50%/cover no-repeat;
   }
 
@@ -280,5 +279,18 @@ textarea:focus, input[type=text]:focus, input[type=number]:focus {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+  }
+}
+@media (max-width: 480px) {
+  .cta .container {
+    padding: 0 0.5rem;
+  }
+
+  .cta__head {
+    font-size: 2.2rem;
+  }
+
+  .form__check-rad {
+    justify-content: center;
   }
 }

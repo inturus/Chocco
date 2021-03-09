@@ -55,6 +55,7 @@ $body: #666666;
         font-weight: 700;
         line-height: 32px;
         margin-top: 20px;
+        text-align: center;
     }
 }
 .why__svg-cont {
@@ -89,4 +90,37 @@ $body: #666666;
     .svg-dots {
         display: none;
     }
+}
+@media (max-width:480px) {
+    .why {
+        background: none;
+        min-height: 55.5rem;
+        .container {
+            padding: 0 0.5rem;
+        }
+    }
+    .why__list {
+        flex-direction: column;
+    }
+    .why__item {
+        flex-direction: row;
+        margin-bottom: 1.6rem;
+        .why__item-head {
+            margin-top: 0;
+            text-align: left;
+        }
+        .why__item-desc {
+            text-align: left;
+        }
+    }
+    .why__svg-cont {
+        flex-shrink: 0;
+    }
+    .why__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 0.6rem;
+    }
+    
 }
