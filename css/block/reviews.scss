@@ -122,6 +122,7 @@ $green: #497870;
 @media (max-width:480px) {
     .reviews {
         padding: 0 0.5rem;
+        min-height: 44.44rem;
         background: url(../../img/reviews-section/reviews-berries.png) 108% 15%/136px no-repeat;
         .container {
             padding: 0;

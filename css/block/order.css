@@ -166,6 +166,15 @@ textarea {
   }
 }
 @media (max-width: 480px) {
+  .cta {
+    min-height: 44.44rem;
+  }
+
+  .cta__head {
+    font-size: 2.22rem;
+    margin-bottom: 2.16rem;
+  }
+
   .form__col:last-child .form__row:nth-child(2) {
     text-align: center;
   }
