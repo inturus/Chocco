@@ -2,9 +2,9 @@ $black: #292929;
 $body: #666666;
 
 .why {
-    background: url('../../img/why-section/leaf-why.png') 0 50%/191px no-repeat;
+    background: url('../../img/why-section/leaf-why.png') 0 50%/10.61rem no-repeat;
     height: 100vh;
-    min-height: 650px;
+    min-height: 36.11rem;
     .container {
         display: flex;
         flex-direction: column;
@@ -13,8 +13,8 @@ $body: #666666;
     &::after {
         content: "";
         position: absolute;
-        width: 161px;
-        height: 315px;
+        width: 8.94rem;
+        height: 17.5rem;
         background-image: url(../../img/why-section/raspberry.png);
         background-repeat: no-repeat;
         background-position: center center;
@@ -22,23 +22,19 @@ $body: #666666;
     }
 }
 .why__head {
-    margin-top: 100px;
-    font-size: 48px;
+    margin-top: 5.55rem;
+    font-size: 2.66rem;
     font-weight: 700;
-    line-height: 58px;
-    letter-spacing: 0px;
 }
 .why__desc {
-    margin-top: 20px;
-    max-width: 436px;
+    margin-top: 1.11rem;
+    max-width: 24.22rem;
     color: $body;
-    font-size: 18px;
-    line-height: 22px;
     text-align: center;
 }
 .why__list {
-    margin-top: 50px;
-    margin-bottom: 115px;
+    margin-top: 2.77rem;
+    margin-bottom: 6.38rem;
     display: flex;
 }
 .why__item {
@@ -47,34 +43,35 @@ $body: #666666;
     align-items: center;
     .why__item-desc {
         text-align: center;
-        margin-top: 18px;
+        margin-top: 1rem;
     }
     .why__item-head {
-        font-size: 27px;
+        font-size: 1.5rem;
         font-style: normal;
         font-weight: 700;
-        line-height: 32px;
-        margin-top: 20px;
+        line-height: 1.77rem;
+        margin-top: 1.11rem;
         text-align: center;
     }
 }
 .why__svg-cont {
     background: #F2F5F4;
-    width: 128px;
-    height: 128px;
+    width: 7.11rem;
+    height: 7.11rem;
     border-radius: 50%;
 }
 .why__svg {
-    transform: translate(45%,45%);
+    transform: translate(48%, -7%);
+    width: 3.6rem;
 }
 .svg-dots {
-    margin-top: 50px;
+    margin-top: 2.77rem;
 }
 
 @media (max-width:768px) {
     .why {
         background: url('../../img/why-section/leaf-why.png') 0 10%/191px no-repeat;
-        min-height: 1000px;
+        min-height: 55.55rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -90,6 +87,9 @@ $body: #666666;
     .svg-dots {
         display: none;
     }
+    .why__head {
+        text-align: center;
+    }
 }
 @media (max-width:480px) {
     .why {
@@ -97,6 +97,9 @@ $body: #666666;
         min-height: 55.5rem;
         .container {
             padding: 0 0.5rem;
+        }
+        &::after {
+            display: none;
         }
     }
     .why__list {
@@ -122,5 +125,7 @@ $body: #666666;
         justify-content: center;
         margin-left: 0.6rem;
     }
-    
+    .why__head {
+        font-size: 2.2rem;
+    }
 }

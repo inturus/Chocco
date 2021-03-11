@@ -3,6 +3,8 @@
 @import url('block/why.css');
 @import url('block/reviews.css');
 @import url('block/order.css');
+@import url('block/contacts.css');
+@import url('block/footer.css');
 @import url('block/fixed-menu.css');
 
 $black: #292929;
@@ -43,7 +45,7 @@ ul li {
 }
 
 .container {
-    max-width: 940px;
+    max-width: 52.2rem;
     margin: 0 auto;
 }
 
@@ -59,7 +61,7 @@ ul li {
     text-decoration: none;
     color:#365A49;
 	font-size:16px;
-    padding:20px 40px;
+    padding: 1.11rem 2.22rem;
     &:hover {
         color:#497870;
     }

@@ -1,9 +1,15 @@
 .chocco {
-  width: 55px;
+  width: 3.05rem;
+}
+
+.chocco__icon {
+  fill: white;
+  width: 3.05rem;
+  height: 2.1rem;
 }
 
 .header {
-  padding-top: 25px;
+  padding-top: 1.38rem;
 }
 .header .container {
   display: flex;
@@ -16,7 +22,7 @@
   justify-content: space-between;
 }
 .menu .menu__item {
-  margin-right: 25px;
+  margin-right: 2vw;
 }
 .menu .menu__item:last-child {
   margin-right: 0;
@@ -30,13 +36,15 @@ a {
 .phone {
   display: flex;
   align-items: center;
-  font-size: 22px;
+  font-size: 1.22rem;
   font-style: normal;
 }
 
-.phone__icon-elem {
+.phone__icon {
+  fill: white;
   width: 14px;
-  margin-right: 6px;
+  height: 14px;
+  margin-right: 0.3rem;
 }
 
 .hamburger {
@@ -47,13 +55,18 @@ a {
   .header .container {
     padding: 0 2rem;
   }
+  .header .menu, .header address {
+    display: none;
+  }
 
   .hamburger {
     display: block;
     align-self: flex-start;
   }
 
-  .menu, address {
-    display: none;
+  .hamburger__icon {
+    fill: white;
+    width: 1.45rem;
+    height: 1.33rem;
   }
 }

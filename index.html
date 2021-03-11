@@ -16,7 +16,9 @@
         <header class="header">
             <div class="container">
                 <div class="chocco">
-                    <img src="img/hello-section/chocco.svg" alt="">
+                    <svg class="chocco__icon">
+                        <use xlink:href='img\hello-section\sprite.svg#chocco'></use>
+                    </svg>
                 </div>
                 <ul class="menu">
                     <li class="menu__item"><a href="" class="menu__link">О нас</a></li>
@@ -29,14 +31,16 @@
                 </ul>
                 <address>
                     <a class="phone" href="tel:+78009039090">
-                        <span class="phone__icon">
-                            <img class="phone__icon-elem" src="img/hello-section/phone.svg" alt="">
-                        </span>
+                            <svg class="phone__icon">
+                                <use xlink:href='img\hello-section\sprite.svg#phone'></use>
+                            </svg>
                         <span class="phone__text">8 800 903 90 90</span> 
                     </a>
                 </address>
                 <a href="" class="hamburger">
-                    <img class="hamburger__icon" src="img/hello-section/gamburger.svg" alt="">
+                    <svg class="hamburger__icon">
+                        <use xlink:href='img\hello-section\sprite.svg#gamburger'></use>
+                    </svg>
                 </a>
             </div>
         </header>
@@ -47,19 +51,25 @@
                     <button href="" class="order">заказать</button>
                     <ul class="hello__pref-list">
                         <li class="hello__pref-item">
-                            <img class="hello__icon" src="img/hello-section/svg-1.svg" alt="">
+                            <svg class="hello__icon">
+                                <use xlink:href='img\hello-section\sprite.svg#svg-1'></use>
+                            </svg>
                             <div class="hello__pref-desc">
                                 100% <br> натуральный <br> продукт
                             </div>
                         </li>
                         <li class="hello__pref-item">
-                            <img class="hello__icon" src="img/hello-section/svg-2.svg" alt="">
+                            <svg class="hello__icon">
+                                <use xlink:href='img\hello-section\sprite.svg#svg-2'></use>
+                            </svg>
                             <div class="hello__pref-desc">
                                 3-5 дней <br> доставка <br> по РФ
                             </div>
                         </li>
                         <li class="hello__pref-item">
-                            <img class="hello__icon" src="img/hello-section/svg-3.svg" alt="">
+                            <svg class="hello__icon">
+                                <use xlink:href='img\hello-section\sprite.svg#svg-3'></use>
+                            </svg>
                             <div class="hello__pref-desc">
                                 Не портит <br> фигуру
                             </div>
@@ -79,7 +89,9 @@
                     <ul class="why__list">
                         <li class="why__item">
                             <div class="why__svg-cont">
-                                <img class="why__svg" src="img/why-section/feat-2.svg" alt="">
+                                <svg class="why__svg">
+                                    <use xlink:href='img\hello-section\sprite.svg#feat-2'></use>
+                                </svg>
                             </div>
                             <div class="why__text">
                                 <h3 class="why__item-head">Полезно</h3>
@@ -96,7 +108,9 @@
                         </li>
                         <li class="why__item">
                             <div class="why__svg-cont">
-                                <img class="why__svg" src="img/why-section/feat-1.svg" alt="">
+                                <svg class="why__svg">
+                                    <use xlink:href='img\hello-section\sprite.svg#feat-1'></use>
+                                </svg>
                             </div>
                             <div class="why__text">
                                 <h3 class="why__item-head">Вкусно</h3>
@@ -112,7 +126,9 @@
                         </li>
                         <li class="why__item">
                             <div class="why__svg-cont">
-                                <img class="why__svg" src="img/why-section/feat-3.svg" alt="">
+                                <svg class="why__svg">
+                                    <use xlink:href='img\hello-section\sprite.svg#feat-3'></use>
+                                </svg>
                             </div>
                             <div class="why__text">
                                 <h3 class="why__item-head">Питательно</h3>
@@ -175,61 +191,70 @@
                         </h2>
                         <div class="form__wrap">
                             <div class="form__col">
-                                <div class="form__first-name">
-                                    <div>
-                                        Имя
-                                        <input type="text" name="name">
-                                    </div>
-                                    <div>
-                                        Телефон
-                                        <input type="number" name="tel">
-                                    </div>
-                                    
+                                <div class="form__row">
+                                    <label class="form__block">
+                                        <div class="form__title">Имя</div>
+                                        <input type="text" class="form__input">
+                                    </label>
+                                    <label class="form__block">
+                                        <div class="form__title">Телефон</div>
+                                        <input type="number" class="form__input">
+                                    </label>
                                 </div>
-                                <div class="form__street">
-                                    Улица
-                                    <input class="form__street" type="text" name="street">
+                                <div class="form__row">
+                                    <label class="form__block">
+                                        <div class="form__title">Улица</div>
+                                        <input type="text" class="form__input">
+                                    </label>
                                 </div>
-                                <div class="form__foot">
-                                    <div>
-                                        Дом
-                                        <input class="form__house" type="number" name="house">
-                                    </div>
-                                    <div>
-                                        Корпус
-                                        <input class="form__corp" type="text">
-                                    </div>
-                                    <div>
-                                        Квартира
-                                        <input class="form__flat" type="number">
-                                    </div>
-                                    <div>
-                                        Этаж
-                                        <input class="form__floor" type="number">
-                                    </div>
+                                <div class="form__row">
+                                    <label class="form__block">
+                                        <div class="form__title">Дом</div>
+                                        <input type="text" class="form__input">
+                                    </label>
+                                    <label class="form__block">
+                                        <div class="form__title">Корпус</div>
+                                        <input type="text" class="form__input">
+                                    </label>
+                                    <label class="form__block">
+                                        <div class="form__title">Квартира</div>
+                                        <input type="text" class="form__input">
+                                    </label>
+                                    <label class="form__block">
+                                        <div class="form__title">Этаж</div>
+                                        <input type="number" class="form__input">
+                                    </label>
                                 </div>
                             </div>
                             <div class="form__col">
-                                <div class="form__comm">
-                                    <label for="">Комментарий</label>  
-                                    <textarea class="form__comment" name="" id=""></textarea>
+                                <div class="form__row">
+                                    <div class="form__block">
+                                        <label for="">Комментарий</label>  
+                                        <textarea class="form__input" name="" id=""></textarea>
+                                    </div>
                                 </div>
-                                <div class="form__check-rad">
-                                    <label class="custom-radio">
-                                        <input type="radio" name="pay" id="ser1" class="ser1">
-                                        <span>Потребуется сдача</span>
-                                    </label>
-                                
-                                    <label class="custom-radio">
-                                        <input type="radio" name="pay" id="ser2" class="ser2">
-                                        <span>Оплата картой</span>
-                                    </label>
-            
-                                    <label class="custom-checkbox">
-                                        <input type="checkbox" name="ser3" id="ser3">
-                                        <span>Не перезванивать</span>
-                                    </label>
+                                <div class="form__row">
+                                    <div class="form__block">
+                                        <label class="custom-radio">
+                                            <input type="radio" name="pay" id="ser1" class="ser1">
+                                            <span>Потребуется сдача</span>
+                                        </label>
+                                    
+                                        <label class="custom-radio">
+                                            <input type="radio" name="pay" id="ser2" class="ser2">
+                                            <span>Оплата картой</span>
+                                        </label>
+                                    </div>
                                 </div>
+                                <div class="form__row">
+                                    <div class="form__block">
+                                        <label class="custom-checkbox">
+                                            <input type="checkbox" name="ser3" id="ser3">
+                                            <span>Не перезванивать</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                    
                                 <div class="form__btn">
                                     <button  type="sumbit">ЗАКАЗАТЬ</button>
                                     <button  type="reset">Очистить</button> 
@@ -240,6 +265,63 @@
                         </div>
                     </form>
                 </div>
+            </section>
+            <section class="contacts">
+                <div class="container">
+                    
+                </div>
+                <footer class="footer">
+                    <div class="footer__container">
+                        <div class="footer__contacts">
+                            <div class="footer__address">
+                                <div class="footer__place">
+                                    Москва, ул.Новый Арбат, д.31/12
+                                </div>
+                                <address>
+                                    <a class="phone" href="tel:+78009039090">
+                                            <svg class="phone__icon phone__icon--footer">
+                                                <use xlink:href='img\hello-section\sprite.svg#phone'></use>
+                                            </svg>
+                                        <span class="phone__text">8 800 903 90 90</span> 
+                                    </a>
+                                </address>
+                            </div>
+                            <div class="footer__socials">
+                                <ul class="contacts__list">
+                                    <li class="contacts__item">
+                                        <a href="" class="footer__link">
+                                            <svg class="contacts__icon">
+                                                <use xlink:href='img\hello-section\sprite.svg#vk'></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="contacts__item">
+                                        <a href="" class="footer__link">
+                                            <svg class="contacts__icon">
+                                                <use xlink:href='img\hello-section\sprite.svg#fb'></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="contacts__item">
+                                        <a href="" class="footer__link">
+                                            <svg class="contacts__icon">
+                                                <use xlink:href='img\hello-section\sprite.svg#in'></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="contacts__item">
+                                        <a href="" class="footer__link">
+                                            <svg class="contacts__icon">
+                                                <use xlink:href='img\hello-section\sprite.svg#tv'></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </footer>          
             </section>
     </main>
     <nav class="fixed-menu">

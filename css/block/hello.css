@@ -1,7 +1,7 @@
 @charset "UTF-8";
 .hello {
-  margin-top: 85px;
-  padding-bottom: 50px;
+  margin-top: 4.72rem;
+  padding-bottom: 2.77rem;
 }
 .hello::before {
   content: "";
@@ -27,47 +27,47 @@
 }
 
 .hello__head {
-  max-width: 353px;
-  font-size: 48px;
-  line-height: 58px;
+  max-width: 19.61rem;
+  font-size: 2.66rem;
+  line-height: 3.22rem;
   color: white;
 }
 
 .hello__desc {
-  margin-top: 17px;
-  margin-bottom: 32px;
-  max-width: 353px;
-  font-size: 21px;
-  line-height: 25px;
+  margin-top: 0.944rem;
+  margin-bottom: 1.77rem;
+  max-width: 19.61rem;
+  font-size: 1.16rem;
+  line-height: 1.38rem;
 }
 
 .hello__pref-list {
-  margin-top: 64px;
+  margin-top: 3.55rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  max-width: 512px;
+  max-width: 28.44rem;
 }
 .hello__pref-list .hello__pref-desc {
-  font-size: 16px;
+  font-size: 0.88rem;
 }
 .hello__pref-list .hello__pref-item {
-  max-width: 165px;
+  max-width: 9.16rem;
   display: flex;
   align-items: flex-start;
 }
-.hello__pref-list img {
-  margin-right: 12px;
-}
 
 .hello__icon {
-  width: 37px;
+  fill: #C6F7FF;
+  width: 2.05rem;
+  height: 1.94rem;
+  margin-right: 0.66rem;
 }
 
 @media (max-width: 768px) {
   .hello {
     text-align: center;
-    margin-top: 510px;
+    margin-top: 28.33rem;
   }
   .hello .container {
     display: flex;
@@ -90,6 +90,20 @@
     display: none;
   }
 }
+@media (max-width: 480px) {
+  .hello {
+    margin-top: 22rem;
+  }
+
+  .hello__desc {
+    margin-top: 0.5rem;
+  }
+
+  .hello__head {
+    font-size: 2.22rem;
+    line-height: 2rem;
+  }
+}
 .bg--blue {
   background-color: #61C4D9;
   background-image: url("../../img/hello-section/Батончики.png"), url("../../img/hello-section/leaves.png");
@@ -99,14 +113,21 @@
   position: relative;
   color: #fff;
   height: 100vh;
-  min-height: 650px;
+  min-height: 36.11rem;
 }
 @media (max-width: 768px) {
   .bg--blue {
-    min-height: 1000px;
+    min-height: 55.55rem;
     background-image: url("../../img/hello-section/right-leaves-and-berry.png"), url("../../img/hello-section/Батончики.png"), url("../../img/hello-section/leaves.png");
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-size: 20rem, 20rem, 30rem;
     background-position: 65% 40%, center 30%, right 30%;
+  }
+}
+@media (max-width: 480px) {
+  .bg--blue {
+    min-height: 44.44rem;
+    background-size: 18rem, 18rem, 18rem;
+    background-position: 65% 35%, center 20%, right 20%;
   }
 }

@@ -1,10 +1,14 @@
 .chocco {
-    width: 55px;
+    width: 3.05rem;
+}
+.chocco__icon {
+    fill: white;
+    width: 3.05rem;
+    height: 2.1rem;
 }
 
-
 .header{
-    padding-top: 25px;
+    padding-top: 1.38rem;
     .container {
         display: flex;
         justify-content: space-between;
@@ -15,7 +19,7 @@
     display: flex;
     justify-content: space-between;
     .menu__item {
-        margin-right: 25px;
+        margin-right: 2vw;
         &:last-child {
             margin-right: 0;
         }
@@ -29,12 +33,14 @@ a {
 .phone {
     display: flex;
     align-items: center;
-    font-size: 22px;
+    font-size: 1.22rem;
     font-style:normal;
 }
-.phone__icon-elem {
+.phone__icon {
+    fill: white;
     width: 14px;
-    margin-right: 6px;
+    height: 14px;
+    margin-right: 0.3rem;
 }
 .hamburger {
     display: none;
@@ -45,12 +51,17 @@ a {
         .container {
             padding: 0 2rem;
         }
+        .menu, address {
+            display: none;
+        }
     }
     .hamburger {
         display: block;
         align-self: flex-start;
     }
-    .menu, address {
-        display: none;
+    .hamburger__icon {
+        fill: white;
+        width: 1.45rem;
+        height: 1.33rem;
     }
 }

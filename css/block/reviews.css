@@ -130,6 +130,10 @@
   .reviews .container {
     padding: 0;
   }
+  .reviews::after {
+    background-size: 4.16rem;
+    bottom: -100rem;
+  }
   .reviews .reviews__block {
     padding-bottom: 0.4rem;
   }
