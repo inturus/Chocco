@@ -22,7 +22,7 @@
   justify-content: space-between;
 }
 .menu .menu__item {
-  margin-right: 2vw;
+  margin-right: 0.9rem;
 }
 .menu .menu__item:last-child {
   margin-right: 0;

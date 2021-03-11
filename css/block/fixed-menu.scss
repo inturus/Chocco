@@ -2,6 +2,9 @@
     position: fixed;
     top: 30%;
     right: 3%;
+    @media (max-width:768px) {
+        display: none;
+    }
 }
 
 .fixed-menu__list {
