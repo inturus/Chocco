@@ -1,11 +1,13 @@
 @import url("block/header.css");
 @import url("block/hello.css");
 @import url("block/why.css");
+@import url("block/bars.css");
 @import url("block/reviews.css");
 @import url("block/order.css");
 @import url("block/contacts.css");
 @import url("block/footer.css");
 @import url("block/fixed-menu.css");
+@import url("block/modal-menu.css");
 * {
   box-sizing: border-box;
 }
@@ -60,6 +62,15 @@ ul li {
 }
 .order:hover {
   color: #497870;
+}
+
+.order--slider {
+  background: #497870;
+  color: white;
+}
+.order--slider:hover {
+  background: #365A49;
+  color: white;
 }
 
 .wrapper {
