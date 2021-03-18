@@ -37,7 +37,7 @@
                         <span class="phone__text">8 800 903 90 90</span> 
                     </a>
                 </address>
-                <a href="" class="hamburger">
+                <a href="" class="hamburger" id="modal-link">
                     <svg class="hamburger__icon">
                         <use xlink:href='img\hello-section\sprite.svg#gamburger'></use>
                     </svg>
@@ -140,6 +140,58 @@
                     </ul>
                 </div>
             </section>
+            <section class="bars">
+                <div class="container">
+                    <a href="" class="left-arr">
+                        <svg class="bars__svg">
+                            <use xlink:href='img\hello-section\sprite.svg#arr-left'></use>
+                        </svg>
+                    </a>
+                    <div class="bars__slide">
+                        <div class="bars__img-col">
+                            <img src="" alt="">
+                        </div>
+                        <div class="bars__col">
+                            <div class="bars__composition">
+                                <svg class="bars__icon">
+                                    <use xlink:href='img\hello-section\sprite.svg#bar-icon'></use>
+                                </svg>
+                                <span>СОСТАВ</span>
+                            </div>
+                            <h3 class="bars__title">Батончик “Гранола виноград”</h3>
+                            <div class="bars__desc">
+                                <p>Гранола из винограда, грецкого ореха и кунжутных семечек. В состав также входят: сухое молоко, заменитель сахара и какао бобы.</p>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <div>Калорийность</div>
+                                            <div><strong>110 ккал</strong></div>
+                                        </td>
+                                        <td>
+                                            <div>Вес</div>
+                                            <div><strong>95 грамм</strong></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="bars__price">140 ₽</div>
+                                        </td>
+                                        <td>
+                                            <div class="order order--slider">заказать</div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                        </div>
+                    </div>
+                    <a href="" class="right-arr">
+                        <svg class="bars__svg">
+                            <use xlink:href='img\hello-section\sprite.svg#arr-right'></use>
+                        </svg>
+                    </a>
+                </div>
+            </section>
             <section class="reviews">
                 <div class="container">
                     <h2 class="reviews__head">
@@ -185,7 +237,7 @@
             </section>
             <section class="cta">
                 <div class="container">
-                    <form class="form" action="">
+                    <form class="form" action="" id="form">
                         <h2 class="cta__head">
                             закажите доставку
                         </h2>
@@ -194,35 +246,35 @@
                                 <div class="form__row">
                                     <label class="form__block">
                                         <div class="form__title">Имя</div>
-                                        <input type="text" class="form__input">
+                                        <input type="text" class="form__input" name="name">
                                     </label>
                                     <label class="form__block">
                                         <div class="form__title">Телефон</div>
-                                        <input type="number" class="form__input">
+                                        <input type="number" class="form__input" name="number">
                                     </label>
                                 </div>
                                 <div class="form__row">
                                     <label class="form__block">
                                         <div class="form__title">Улица</div>
-                                        <input type="text" class="form__input">
+                                        <input type="text" class="form__input" name="street">
                                     </label>
                                 </div>
                                 <div class="form__row">
                                     <label class="form__block">
                                         <div class="form__title">Дом</div>
-                                        <input type="text" class="form__input">
+                                        <input type="text" class="form__input" name="homeNumber">
                                     </label>
                                     <label class="form__block">
                                         <div class="form__title">Корпус</div>
-                                        <input type="text" class="form__input">
+                                        <input type="text" class="form__input" name="corpus">
                                     </label>
                                     <label class="form__block">
                                         <div class="form__title">Квартира</div>
-                                        <input type="text" class="form__input">
+                                        <input type="text" class="form__input" name="flat">
                                     </label>
                                     <label class="form__block">
                                         <div class="form__title">Этаж</div>
-                                        <input type="number" class="form__input">
+                                        <input type="number" class="form__input" name="floor">
                                     </label>
                                 </div>
                             </div>
@@ -230,18 +282,18 @@
                                 <div class="form__row">
                                     <div class="form__block">
                                         <label for="">Комментарий</label>  
-                                        <textarea class="form__input" name="" id=""></textarea>
+                                        <textarea class="form__input" name="" id="" name="comment"></textarea>
                                     </div>
                                 </div>
                                 <div class="form__row">
                                     <div class="form__block">
                                         <label class="custom-radio">
-                                            <input type="radio" name="pay" id="ser1" class="ser1">
+                                            <input type="radio" name="pay" id="ser1" class="ser1" value="change">
                                             <span>Потребуется сдача</span>
                                         </label>
                                     
                                         <label class="custom-radio">
-                                            <input type="radio" name="pay" id="ser2" class="ser2">
+                                            <input type="radio" name="pay" id="ser2" class="ser2" value="card">
                                             <span>Оплата картой</span>
                                         </label>
                                     </div>
@@ -256,7 +308,7 @@
                                 </div>
                                     
                                 <div class="form__btn">
-                                    <button  type="sumbit">ЗАКАЗАТЬ</button>
+                                    <button  type="sumbit" id='sendButton'>ЗАКАЗАТЬ</button>
                                     <button  type="reset">Очистить</button> 
                                 </div>
                             </div>
@@ -353,5 +405,23 @@
         </ul>
     </nav>
     </div>
+    <div class="modal">
+        <a href="" class="modal__close-link" id="close">
+            <div class="modal__close">
+                <span class="modal__cross"></span>
+                <span class="modal__cross"></span>
+            </div>
+        </a>
+        <ul class="menu">
+            <li class="menu__item"><a href="" class="menu__link">О нас</a></li>
+            <li class="menu__item"><a href="" class="menu__link">Батончики</a></li>
+            <li class="menu__item"><a href="" class="menu__link">Команда</a></li>
+            <li class="menu__item"><a href="" class="menu__link">Меню</a></li>
+            <li class="menu__item"><a href="" class="menu__link">Отзывы</a></li>
+            <li class="menu__item"><a href="" class="menu__link">Как мы работаем</a></li>
+            <li class="menu__item"><a href="" class="menu__link">Контакты</a></li>
+        </ul>
+    </div>
+    <script src="index.js"></script>
 </body>
 </html>
