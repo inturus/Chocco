@@ -8,13 +8,13 @@
 .reviews::after {
   content: "";
   position: absolute;
-  width: 161px;
-  height: 315px;
+  width: 20rem;
+  height: 17.5rem;
   background-image: url(../../img/reviews-section/pattern.png);
   background-repeat: no-repeat;
   background-attachment: local;
   left: 0;
-  bottom: -75rem;
+  top: 150rem;
 }
 
 .reviews__head {
@@ -101,7 +101,9 @@
   }
   .reviews::after {
     background-image: url(../../img/reviews-section/pattern.png);
-    bottom: -140rem;
+    width: 5rem;
+    height: 15.66rem;
+    top: 212rem;
   }
 
   .reviews__block {
@@ -132,8 +134,8 @@
     padding: 0;
   }
   .reviews::after {
-    background-size: 4.16rem;
-    bottom: -100rem;
+    top: 170rem;
+    background-size: 90%;
   }
   .reviews .reviews__block {
     padding-bottom: 0.4rem;
