@@ -3,11 +3,13 @@
   height: 100vh;
   min-height: 36.11rem;
   display: flex;
+  padding: 0 1rem;
 }
 .bars .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
   max-width: 59rem;
 }
 
@@ -16,14 +18,15 @@
   width: 0.75rem;
 }
 
-.bars__slide {
-  display: flex;
-  flex-direction: row;
-}
-
 .bars__img-col {
+  min-height: 0;
   width: 50%;
   background: url("../../img/bars/bars-1.png") 46% center/17rem no-repeat, url("../../img/bars/leaf-2.png") left 30%/4rem no-repeat, url("../../img/bars/leaf-1.png") 90% bottom/5.5rem no-repeat, url("../../img/bars/ellipse-2.png") center 60%/20rem no-repeat, url("../../img/bars/ellipse-1.png") center 80%/20rem no-repeat;
+}
+
+.bars__img-col-2 {
+  width: 50%;
+  background: url("../../img/bars/bar_sea.png") 46% center/17rem no-repeat, url("../../img/bars/leaf-2.png") left 30%/4rem no-repeat, url("../../img/bars/leaf-1.png") 90% bottom/5.5rem no-repeat, url("../../img/bars/ellipse-2.png") center 60%/20rem no-repeat, url("../../img/bars/ellipse-1.png") center 80%/20rem no-repeat;
 }
 
 .bars__col {
@@ -85,6 +88,12 @@
     background: url("../../img/bars/bars-1.png") 49% center/14.5rem no-repeat, url("../../img/bars/leaf-2.png") 18% 20%/4rem no-repeat, url("../../img/bars/leaf-1.png") 75% bottom/5.5rem no-repeat, url("../../img/bars/ellipse-2.png") center 60%/18.5rem no-repeat, url("../../img/bars/ellipse-1.png") center 80%/20rem no-repeat;
   }
 
+  .bars__img-col-2 {
+    width: 100%;
+    min-height: 17rem;
+    background: url("../../img/bars/bar_sea.png") 49% center/14.5rem no-repeat, url("../../img/bars/leaf-2.png") 18% 20%/4rem no-repeat, url("../../img/bars/leaf-1.png") 75% bottom/5.5rem no-repeat, url("../../img/bars/ellipse-2.png") center 60%/18.5rem no-repeat, url("../../img/bars/ellipse-1.png") center 80%/20rem no-repeat;
+  }
+
   .bars {
     min-height: 55.55rem;
   }
@@ -136,4 +145,35 @@
     min-height: 15rem;
     background: url("../../img/bars/bars-1.png") 49% center/13.5rem no-repeat, url("../../img/bars/leaf-2.png") 5% 22%/3rem no-repeat, url("../../img/bars/leaf-1.png") 95% bottom/4.3rem no-repeat, url("../../img/bars/ellipse-2.png") center 60%/17rem no-repeat, url("../../img/bars/ellipse-1.png") center 80%/18rem no-repeat;
   }
+
+  .bars__img-col-2 {
+    min-height: 15rem;
+    background: url("../../img/bars/bar_sea.png") 49% center/13.5rem no-repeat, url("../../img/bars/leaf-2.png") 5% 22%/3rem no-repeat, url("../../img/bars/leaf-1.png") 95% bottom/4.3rem no-repeat, url("../../img/bars/ellipse-2.png") center 60%/17rem no-repeat, url("../../img/bars/ellipse-1.png") center 80%/18rem no-repeat;
+  }
+}
+.bars__slider {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  will-change: right;
+  transition: right 1s;
+  max-width: 960px;
+  overflow: hidden;
+}
+.bars__slider .bars__slide {
+  display: flex;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.bars__btn_right {
+  position: absolute;
+  right: 0;
+  z-index: 10;
+}
+
+.bars__btn_left {
+  position: absolute;
+  left: 0;
+  z-index: 10;
 }

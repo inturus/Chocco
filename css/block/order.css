@@ -14,6 +14,7 @@ textarea:focus, input[type=text]:focus, input[type=number]:focus {
 }
 
 .cta {
+  transition: 0.5s;
   background: url("../../img/cta-section/blackberry.png") 5% 95%/2.6rem no-repeat, url(../../img/cta-section/leaf.png) 98% 96%/7.5rem no-repeat, url("../../img/cta-section/order-gb.png") 50%/cover no-repeat;
   height: 100vh;
   min-height: 36.1rem;
