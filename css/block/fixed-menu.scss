@@ -14,10 +14,10 @@
 
 .fixed-menu__item {
     margin-bottom: 5px;
-
     &--active {
         .fixed-menu__link {
             border-color: white;
+            box-shadow: 0 0px 7px 2px rgb(0 0 0 / 30%);
         }
     }
 }
@@ -37,5 +37,6 @@
         border-radius: 50%;
         background:white;
         transform: translate(70%,70%);
+    box-shadow: 0 0px 7px 2px rgb(0 0 0 / 30%);
     }
 }

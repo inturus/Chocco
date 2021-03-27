@@ -5,9 +5,11 @@
 @import url("block/reviews.css");
 @import url("block/order.css");
 @import url("block/contacts.css");
+@import url("block/team.css");
 @import url("block/footer.css");
 @import url("block/fixed-menu.css");
 @import url("block/modal-menu.css");
+@import url("block/modal-window.css");
 * {
   box-sizing: border-box;
 }
@@ -59,6 +61,7 @@ ul li {
   color: #365A49;
   font-size: 16px;
   padding: 1.11rem 2.22rem;
+  transition: 0.4s;
 }
 .order:hover {
   color: #497870;
