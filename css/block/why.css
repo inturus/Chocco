@@ -86,7 +86,7 @@
     align-items: center;
   }
   .why::after {
-    bottom: -85rem;
+    top: 98rem;
   }
 
   .svg-dots {
