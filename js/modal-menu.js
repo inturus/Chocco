@@ -21,7 +21,7 @@ const close = document.querySelector('#close');
 
 close.addEventListener('click', function(event) {
     event.preventDefault();
-
+    
     modal.style.display = 'none';
     document.querySelector('body').style.overflow = 'visible';
 })

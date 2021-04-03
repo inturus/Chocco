@@ -2,6 +2,7 @@
   background: url("../../img/why-section/leaf-why.png") 0 50%/10.61rem no-repeat;
   height: 100vh;
   min-height: 36.11rem;
+  position: relative;
 }
 .why .container {
   display: flex;
@@ -16,7 +17,7 @@
   background-image: url(../../img/why-section/raspberry.png);
   background-repeat: no-repeat;
   background-position: center center;
-  bottom: -46rem;
+  top: 29rem;
 }
 
 .why__head {

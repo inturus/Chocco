@@ -3,9 +3,11 @@
 @import url('block/why.css');
 @import url('block/bars.css');
 @import url('block/reviews.css');
+@import url('block/video.css');
 @import url('block/order.css');
 @import url('block/contacts.css');
 @import url('block/team.css');
+@import url('block/product.css');
 @import url('block/footer.css');
 @import url('block/fixed-menu.css');
 @import url('block/modal-menu.css');
@@ -28,6 +30,8 @@ html, body {
     font-family: "Alegreya Sans";
     font-size: 18px;
     color: $body;
+    scroll-behavior: smooth;
+    overflow: hidden;
 }
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
@@ -81,5 +85,6 @@ ul li {
 }
 .wrapper {
     overflow: hidden;
+    transition: 400ms;
 }
 

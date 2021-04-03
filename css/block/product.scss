@@ -1,0 +1,125 @@
+.product {
+    height: 100vh;
+    min-height: 36.11rem;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    background: url('../../img/product/Slider.jpg')center center no-repeat;
+    @media (max-width: 768px) {
+        
+    }
+    @media (max-width: 480px) {
+        max-height: 36.11rem;
+    }
+}
+
+.product__container {
+    position: relative;
+}
+.product__head {
+    position: absolute;
+    top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 0;
+        font-size: 3rem;
+    color: white;
+    margin-top: 5rem;
+    margin-left: 5rem;
+    @media (max-width: 768px) {
+        z-index: 0;
+    }
+    @media (max-width: 480px) {
+       margin-left: 1rem;
+       font-size: 2.22rem;
+    }
+    &_mob {
+        display: none;
+    }
+
+}
+
+.product__list {
+    overflow: hidden;
+    display: flex;
+}
+.product__desc {
+    overflow: hidden;
+    max-width: 0;
+    cursor: pointer;
+    color: white;
+    line-height: 1.3rem;
+    backdrop-filter: brightness(50%);
+    transition: 400ms;
+    opacity: 0;
+    &_active {
+        padding: 3rem;
+        max-width: 40vw;
+        opacity: 1;
+        @media (max-width: 768px) {
+            max-width: calc(100vw - 243.45px);
+        }
+        @media (max-width: 480px) {
+            max-width: calc(100vw - 45vw);
+            padding: 1rem;
+        }
+    }
+}
+
+.product__img {
+    max-height: 100vh;
+    flex-shrink: 0;
+    @media (max-width:480px){
+        display: none;
+    }
+}
+
+.product__img-mob {
+    display: none;
+    @media (max-width: 480px) {
+        display: block;
+        
+    }
+    
+}
+.product__item {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    @media (max-width: 480px) {
+        .product__link {
+            height: 100vh;
+            width: 17vw;
+            position: relative;
+        }
+        &:nth-child(1) {
+            .product__link {
+                background-image: url('../../img/product/slides-mob/Slide.png');
+            }
+        }
+        &:nth-child(2) {
+            .product__link {
+                background-image: url('../../img/product/slides-mob/Slide-2.png');
+            }
+        }
+        &:nth-child(3) {
+            .product__link {
+                background-image: url('../../img/product/slides-mob/Slide-3.png');
+            }
+        }
+    }
+}
+
+.product__title {
+    display: none;
+    @media (max-width: 480px) {
+        display: flex;
+        height: 2rem;
+        transform: rotate(-90deg) translate(-650%, 20%); 
+        font-size: 2rem;
+        line-height: 1rem;
+        font-weight: 700;
+    }
+}
+

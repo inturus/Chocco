@@ -16,7 +16,7 @@ sendBtn.addEventListener('click', function(event) {
         xhr.setRequestHeader('content-type', 'application/json');
         xhr.send(JSON.stringify(data));
         xhr.addEventListener('load', ()=> {
-            document.querySelector('body').style.overflow = 'hidden';
+            // document.querySelector('body').style.overflow = 'hidden';
             document.querySelector('.modal-window').style.display = 'flex';
             document.querySelector('.modal-window__desc').textContent = (JSON.parse(xhr.response)).message;
         })
@@ -25,7 +25,7 @@ sendBtn.addEventListener('click', function(event) {
 
 document.querySelector('#modal-window__close').addEventListener('click', (e) => {
     e.preventDefault();
-    document.querySelector('body').style.overflow = 'visible';
+    // document.querySelector('body').style.overflow = 'visible';
 
             document.querySelector('.modal-window').style.display = 'none';
 });
