@@ -3,8 +3,9 @@ $body: #666666;
 
 .why {
     background: url('../../img/why-section/leaf-why.png') 0 50%/10.61rem no-repeat;
-    height: 100vh;
+    height: 100%;
     min-height: 36.11rem;
+    position: relative;
     .container {
         display: flex;
         flex-direction: column;
@@ -18,7 +19,7 @@ $body: #666666;
         background-image: url(../../img/why-section/raspberry.png);
         background-repeat: no-repeat;
         background-position: center center;
-        bottom: -46rem;
+        top: 0;
     }
 }
 .why__head {

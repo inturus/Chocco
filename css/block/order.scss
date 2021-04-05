@@ -24,6 +24,8 @@ textarea:focus, input[type=text]:focus, input[type=number]:focus {
     url('../../img/cta-section/order-gb.png') 50%/cover no-repeat;
     height: 100vh;
     min-height: 36.1rem;
+    display: flex;
+    align-items: center;
     &::before {
         content: '';
         position: absolute;
@@ -31,9 +33,13 @@ textarea:focus, input[type=text]:focus, input[type=number]:focus {
         width: 10.8rem;
         background: url('../../img/cta-section/leaf-berry.png');
     }
+
 }
 .cta .container {
     padding: 2.8rem 0 4.7rem;
+    @media (max-width:768px) {
+        padding: 0;
+    }
 }
 .cta__head {
     text-align: center;
@@ -146,7 +152,7 @@ textarea {
         .cta {
           display: flex;
               flex-direction: column;
-              justify-content: center;
+              justify-content: flex-start;
               align-items: center;
           min-height: 55.5rem;
           background: url('../../img/cta-section/order-gb.png') 50%/cover no-repeat;

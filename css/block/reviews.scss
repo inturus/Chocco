@@ -8,6 +8,8 @@ $green: #497870;
     background: url(../../img/reviews-section/reviews-berries.png) 97% 10%/136px no-repeat;
     height: 100vh;
     min-height: 650px;
+    display: flex;
+    align-items: center;
     &::after {
         content: "";
         position: absolute;

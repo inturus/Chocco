@@ -112,7 +112,7 @@
   background-position: 96% 44%, right bottom;
   position: relative;
   color: #fff;
-  height: 100vh;
+  height: 100%;
   min-height: 36.11rem;
 }
 @media (max-width: 768px) {
