@@ -1,0 +1,158 @@
+.video {
+  min-height: 36.11rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.video .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.video__head {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 58px;
+  margin-bottom: 1.66rem;
+}
+@media (max-width: 480px) {
+  .video__head {
+    font-size: 40px;
+    text-align: center;
+  }
+}
+
+.video__splash {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  cursor: pointer;
+  background: url("../../img/video/player.png") center center no-repeat;
+}
+
+.video__controls {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2rem;
+  background: #3e3e3e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25px;
+}
+@media (max-width: 480px) {
+  .video__controls {
+    padding: 0 7px;
+  }
+}
+
+.video__state {
+  outline: none;
+  background: none;
+  position: relative;
+  width: 14px;
+  height: 22px;
+  border: none;
+}
+.video__state::after {
+  content: "";
+  display: block;
+  border: 0.8rem solid transparent;
+  border-left-color: white;
+  border-top-width: 0.5rem;
+  border-bottom-width: 0.5rem;
+}
+
+.video__progressbar {
+  outline: none;
+  background: grey;
+  width: 75%;
+  border-radius: 10px;
+  height: 0.3rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+@media (max-width: 480px) {
+  .video__progressbar {
+    width: 65%;
+  }
+}
+
+.video__progressbar-btn {
+  position: absolute;
+  outline: none;
+  width: 0.5rem;
+  height: 0.6rem;
+  border: none;
+  border-radius: 50%;
+}
+
+.video__player {
+  height: 390px;
+  width: 650px;
+  position: relative;
+}
+.video__player::before {
+  content: "";
+  position: absolute;
+  width: 8.94rem;
+  height: 8rem;
+  background-image: url(../../img/video/left-leaf.png);
+  background-repeat: no-repeat;
+  left: -10vw;
+  bottom: -5vw;
+}
+.video__player::after {
+  content: "";
+  position: absolute;
+  width: 8.94rem;
+  height: 8rem;
+  background-image: url(../../img/video/right-leaf.png);
+  background-repeat: no-repeat;
+  right: -15vw;
+  top: -5vw;
+}
+.video__player--active .video__splash {
+  display: none;
+}
+.video__player--paused .video__state::after, .video__player--paused .video__state::before {
+  content: "";
+  display: block;
+  border: none;
+  width: 5px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background: white;
+}
+.video__player--paused .video__state::after {
+  left: 0;
+}
+.video__player--paused .video__state::before {
+  right: 0;
+}
+
+video, .video__player {
+  width: 650px;
+  height: 390px;
+}
+@media (max-width: 768px) {
+  video, .video__player {
+    width: 594px;
+    height: 350px;
+  }
+}
+@media (max-width: 480px) {
+  video, .video__player {
+    width: 394px;
+    height: 233px;
+  }
+}

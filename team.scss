@@ -1,0 +1,131 @@
+.team {
+    height: 100%;
+    min-height: 36.11rem;
+    .container {
+        height: 36.11rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 4rem;
+    }
+    
+}
+
+.team__head {
+    text-align: center;
+    font-size: 2.66rem;
+    // margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.team__list {
+    display: flex;
+    justify-content: space-between;
+}
+.team__item {
+    margin-right: 1rem;
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.team__title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 1.1rem;
+    margin-bottom: 0.44rem;
+    position: relative;
+    &::after {
+        content: '';
+        display: inline-block;
+        margin-left: 0.5rem;
+        position: absolute;
+        transform: translateY(75%);
+        width: 0;
+        height: 0;
+        border: 6px solid transparent;
+        border-top-color: #365A49;
+    }
+}
+.team__text-block {
+    height: 0;
+    overflow: hidden;
+    .team__photo {
+        display: none;
+    }
+}
+.team__item_active {
+    .team__text-block {
+        transition: height 1s;
+        height: auto;
+    }
+    .team__title {
+        &::after {
+            border-bottom-color: #365A49;
+            border-top-color: transparent;
+            transform: translateY(20%);
+        }
+    }
+    @media (max-width:768px) {
+        .team__text-block {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 1.82rem;
+            .team__photo {
+                display: block;
+                text-align: center;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+  }     
+
+.team__position {
+    text-align: center;
+    color: black;
+    margin-bottom: 0.22rem;
+}
+.team__desc {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .team {
+        padding-top: 9.72rem;
+    }
+    .team__head {
+        margin-bottom: 1.83rem;
+    }
+    .team__title {
+        margin-top: 0.5rem;
+    }
+    .team__list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .team__item {
+        display: flex;
+        flex-direction: column;
+        margin-right: 0;
+        max-width: 14rem;
+        .team__photo {
+            display: none;
+        }
+    }
+    .team__position {
+        font-weight: 700;
+    }
+}
+
+@media (max-width: 480px) {
+    .team {
+        // min-height: 44.44rem;
+    }
+    .team__photo {
+        width: 7.66rem;
+    }
+}

@@ -1,0 +1,141 @@
+.why__wrap {
+  background: url("../../img/why-section/leaf-why.png") 0 50%/10.61rem no-repeat;
+  height: 100%;
+  min-height: 36.11rem;
+  position: relative;
+}
+.why__wrap::after {
+  content: "";
+  position: absolute;
+  width: 8.94rem;
+  height: 17.5rem;
+  background-image: url("../../img/why-section/raspberry.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  bottom: -5rem;
+  left: 0;
+  z-index: 50;
+}
+.why__wrap .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.why__head {
+  margin-top: 5.55rem;
+  font-size: 2.66rem;
+  font-weight: 700;
+}
+
+.why__desc {
+  margin-top: 1.11rem;
+  max-width: 24.22rem;
+  color: #666666;
+  text-align: center;
+}
+
+.why__list {
+  margin-top: 2.77rem;
+  margin-bottom: 6.38rem;
+  display: flex;
+}
+
+.why__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.why__item .why__item-desc {
+  text-align: center;
+  margin-top: 1rem;
+}
+.why__item .why__item-head {
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.77rem;
+  margin-top: 1.11rem;
+  text-align: center;
+}
+
+.why__svg-cont {
+  background: #F2F5F4;
+  width: 7.11rem;
+  height: 7.11rem;
+  border-radius: 50%;
+}
+
+.why__svg {
+  transform: translate(48%, -7%);
+  width: 3.6rem;
+}
+
+.svg-dots {
+  margin-top: 2.77rem;
+}
+
+@media (max-width: 768px) {
+  .why__wrap {
+    background: url("../../img/why-section/leaf-why.png") 0 10%/191px no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .why__wrap .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .svg-dots {
+    display: none;
+  }
+
+  .why__head {
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  .why {
+    background: none;
+  }
+  .why .container {
+    padding: 0 0.5rem;
+  }
+  .why::after {
+    display: none;
+  }
+
+  .why__list {
+    flex-direction: column;
+  }
+
+  .why__item {
+    flex-direction: row;
+    margin-bottom: 1.6rem;
+  }
+  .why__item .why__item-head {
+    margin-top: 0;
+    text-align: left;
+  }
+  .why__item .why__item-desc {
+    text-align: left;
+  }
+
+  .why__svg-cont {
+    flex-shrink: 0;
+  }
+
+  .why__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 0.6rem;
+  }
+
+  .why__head {
+    font-size: 2.2rem;
+  }
+}
