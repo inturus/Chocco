@@ -1,4 +1,4 @@
-.bars {
+.bars__wrap {
     background: #F8FAF9;
     height: 100%;
     // min-height: 36.11rem;
@@ -163,7 +163,7 @@
         url('../../img/bars/ellipse-2.png') center 60%/18.5rem no-repeat,
          url('../../img/bars/ellipse-1.png') center 80%/20rem no-repeat;
     }
-    .bars {
+    .bars__wrap {
         // min-height: 55.55rem;
         .container {
             padding: 0 0.75rem;
@@ -199,7 +199,7 @@
 }
 
 @media (max-width: 480px) {
-    .bars {
+    .bars__wrap {
         // min-height: 44.44rem;
         p {
             max-width: 100%;

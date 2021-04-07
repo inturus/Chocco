@@ -1,10 +1,10 @@
 $black: #292929;
 $body: #666666;
 
-.why {
+.why__wrap {
     background: url('../../img/why-section/leaf-why.png') 0 50%/10.61rem no-repeat;
     height: 100%;
-    min-height: 36.11rem;
+    min-height: 36.11rem; position: relative;
     &::after {
         content: "";
         position: absolute;
@@ -13,14 +13,9 @@ $body: #666666;
         background-image: url('../../img/why-section/raspberry.png');
         background-repeat: no-repeat;
         background-position: center center;
-        top: 78rem;
+        bottom: -5rem;
         left: 0;
-        @media (max-width: 768px) {
-            top: 83rem;
-        }
-        @media (max-width: 480px) {
-            display: none;
-        }
+        z-index: 50;
     }
     .container {
         display: flex;
@@ -79,14 +74,14 @@ $body: #666666;
 
 @media (max-width:768px) {
     
-    .why {
+    .why__wrap {
         background: url('../../img/why-section/leaf-why.png') 0 10%/191px no-repeat;
         // min-height: 55.55rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
         &::after {
-                top: 80rem;
+                // top: 80rem;
             }
         .container {
             display: flex;

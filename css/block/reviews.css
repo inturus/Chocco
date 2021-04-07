@@ -1,4 +1,4 @@
-.reviews {
+.reviews__wrap {
   text-align: center;
   padding: 63px 0;
   background: url(../../img/reviews-section/reviews-berries.png) 97% 10%/136px no-repeat;
@@ -8,7 +8,7 @@
   align-items: center;
   position: relative;
 }
-.reviews::after {
+.reviews__wrap::before {
   content: "";
   position: absolute;
   width: 20rem;
@@ -17,9 +17,9 @@
   background-repeat: no-repeat;
   background-attachment: local;
   left: 0;
-  top: 150rem;
+  bottom: -10rem;
 }
-.reviews::before {
+.reviews__wrap::after {
   content: "";
   position: absolute;
   width: 10rem;
@@ -29,7 +29,7 @@
   left: 0rem;
   bottom: -10rem;
 }
-.reviews .container {
+.reviews__wrap .container {
   position: relative;
 }
 
@@ -130,7 +130,7 @@
 }
 
 @media (max-width: 768px) {
-  .reviews {
+  .reviews__wrap {
     text-align: center;
     padding: 63px 0;
     display: flex;
@@ -138,16 +138,9 @@
     justify-content: center;
     background: url(../../img/reviews-section/reviews-berries.png) 97% 0%/136px no-repeat;
   }
-  .reviews .container {
+  .reviews__wrap .container {
     padding: 0 1.2rem;
   }
-  .reviews::after {
-    background-image: url(../../img/reviews-section/pattern.png);
-    width: 5rem;
-    height: 15.66rem;
-    top: 257rem;
-  }
-
   .reviews__block {
     flex-direction: column;
     max-width: 100%;
