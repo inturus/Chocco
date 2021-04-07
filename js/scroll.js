@@ -1,161 +1,103 @@
-function del() {
-    arr = document.querySelectorAll('.fixed-menu__item')
-    arr.forEach(element => {
-        element.classList.remove('fixed-menu__item--active')
-    });
-}
 
-var i = 0;
-var x = 0;
-
-var bullet = document.querySelectorAll('.fixed-menu__link');
-
-bullet.forEach(element => {
-    element.addEventListener('click', ()=>{
-        del();
-        let link = element.closest('.fixed-menu__item')
-        link.classList.add('fixed-menu__item--active')
-        console.log(link.querySelector('a').getAttribute('id'))
-        if(link.querySelector('a').getAttribute('id') == `about-btn`) {
-            i = 0
-        } else if (link.querySelector('a').getAttribute('id') == `why-btn`) {
-            i = 1
-        } else if (link.querySelector('a').getAttribute('id') == `bars-btn`) {
-            i = 2
-        } else if (link.querySelector('a').getAttribute('id') == `team-btn`) {
-            i = 3
-        } else if (link.querySelector('a').getAttribute('id') == `product-btn`) {
-            i = 4
-        } else if (link.querySelector('a').getAttribute('id') == `reviews-btn`) {
-            i = 5
-        } else if (link.querySelector('a').getAttribute('id') == `video-btn`) {
-            i = 6
-        } else if (link.querySelector('a').getAttribute('id') == `order-btn`) {
-            i = 7
-        } else if (link.querySelector('a').getAttribute('id') == `contacts-btn`) {
-            i = 8
+    const sections = $('.section')
+    const display = $('.maincontent')
+    
+    const mobileDetect = new MobileDetect(window.navigator.userAgent)
+    const isMobile = mobileDetect.mobile()
+    
+    let inScroll = false
+    
+    sections.first().addClass('active')
+    
+    const performTransition = sectionEq => {
+    
+        if(inScroll == false) {
+            inScroll = true
+            const position = sectionEq * -100 
+            const sideMenu = $('.fixed-menu__list')
+            display.css({
+                transform: `translateY(${position}%)`
+            })
+        
+            sections.eq(sectionEq).addClass('active').siblings().removeClass('active')
+    
+            sideMenu.find('.fixed-menu__item').eq(sectionEq).addClass('fixed-menu__item--active').siblings().removeClass('fixed-menu__item--active')
+    
+            setTimeout(()=> {
+                inScroll = false
+            }, 1200)
+        } 
+    
+       
+    }
+    
+    const scrollViewport = direction => {
+        const activeSection = sections.filter('.active')
+        const nextSection = activeSection.next()
+        const prevSection = activeSection.prev()
+    
+    
+        if(direction == 'next' && nextSection.length) {
+            performTransition(nextSection.index())
         }
-        console.log('click '+i)
-})
-})
+    
+        if(direction == 'prev' && prevSection.length) {
+            performTransition(prevSection.index())
+        }
+    }
+    
+    $(window).on('wheel', e => {
+        e.preventDefault()
+        const deltaY = e.originalEvent.deltaY
+        if(deltaY > 0) {
+            scrollViewport('next')
+        }
+        if(deltaY < 0) {
+            scrollViewport('prev')
+        }
+    })
+    
+    $(window).on('keydown', e => {
+        const tagName = e.target.tagName.toLowerCase()
+    
+        if(tagName != 'input' && tagName != 'textarea') {
+            if(e.keyCode == 40) {
+                scrollViewport('next')
+            }
+    
+            if (e.keyCode == 38) {
+                scrollViewport('prev')
+            }
+        }
+        
+    })
+    
+    $('.wrapper').on('touchmove', e => {
+        e.preventDefault()
+    })
+    
+    $('[data-scroll-to]').click(e => {
+        e.preventDefault()
+    
+        const $this = $(e.currentTarget)
+        const target = $this.attr('data-scroll-to')
+        const reqSection = $(`[data-section-id=${target}]`)
+        
+        performTransition(reqSection.index())
+    })
+    
+    if(isMobile) {
+        $(".wrapper").swipe({
+            swipe:function(event, direction) {
+                // const scroller = scrollViewport()
+                let scrollDirection = ''
+                if(direction == 'up') scrollDirection = 'next'
+                if(direction == 'down') scrollDirection = 'prev'
+        
+                scrollViewport(scrollDirection)
+            }
+          });
+    }
 
 
 
-function scr(event) {
-    event.preventDefault()
-    let direction = event.deltaY
-
-    if(direction > 0 && i == 0) {
-        element = document.querySelector(`#why-btn`);
-        element.click();
-        i=1;
-        del();
-        element.closest('.fixed-menu__item').classList.add('fixed-menu__item--active')
-    } else if(direction < 0 && i == 1) {
-        element = document.querySelector(`#about-btn`);
-        element.click();
-        i=0;
-        del();
-        element.closest('.fixed-menu__item').classList.add('fixed-menu__item--active')
-    } else if(direction > 0 && i == 1) {
-        element = document.querySelector(`#bars-btn`);
-        element.click();
-        i=2;
-        del();
-        element.closest('.fixed-menu__item').classList.add('fixed-menu__item--active')
-    } else if(direction < 0 && i == 2) {
-        element = document.querySelector(`#why-btn`);
-        element.click();
-        i=1;
-        del();
-        element.closest('.fixed-menu__item').classList.add('fixed-menu__item--active')
-    } else if (direction > 0 && i == 2) {
-        element = document.querySelector(`#team-btn`);
-        element.click();
-        i=3;
-        del();
-        element.closest('.fixed-menu__item').classList.add('fixed-menu__item--active')
-    } else if (direction < 0 && i == 3) {
-        element = document.querySelector(`#bars-btn`);
-        element.click();
-        i=2;
-        del();
-        element.closest('.fixed-menu__item').classList.add('fixed-menu__item--active')
-    } else if (direction > 0 && i == 3) {
-        element = document.querySelector(`#product-btn`);
-        element.click();
-        i=4;
-        del();
-        element.closest('.fixed-menu__item').classList.add('fixed-menu__item--active')
-    } else if (direction < 0 && i == 4) {
-        element = document.querySelector(`#team-btn`);
-        element.click();
-        i=3;
-        del();
-        element.closest('.fixed-menu__item').classList.add('fixed-menu__item--active')
-    } else if (direction > 0 && i == 4) {
-        element = document.querySelector(`#reviews-btn`);
-        element.click();
-        i=5;
-        del();
-        element.closest('.fixed-menu__item').classList.add('fixed-menu__item--active')
-    } else if (direction < 0 && i == 5) {
-        element = document.querySelector(`#product-btn`);
-        element.click();
-        i=4;
-        del();
-        element.closest('.fixed-menu__item').classList.add('fixed-menu__item--active')
-    } else if (direction > 0 && i == 5) {
-        element = document.querySelector(`#video-btn`);
-        element.click();
-        i=6;
-        del();
-        element.closest('.fixed-menu__item').classList.add('fixed-menu__item--active')
-    } else if (direction < 0 && i == 6) {
-        element = document.querySelector(`#reviews-btn`);
-        element.click();
-        i=5;
-        del();
-        element.closest('.fixed-menu__item').classList.add('fixed-menu__item--active')
-    } else if (direction > 0 && i == 6) {
-        element = document.querySelector(`#order-btn`);
-        element.click();
-        i=7;
-        del();
-        element.closest('.fixed-menu__item').classList.add('fixed-menu__item--active')
-    } else if (direction < 0 && i == 7) {
-        element = document.querySelector(`#video-btn`);
-        element.click();
-        i=6;
-        del();
-        element.closest('.fixed-menu__item').classList.add('fixed-menu__item--active')
-    } else if (direction > 0 && i == 7) {
-        element = document.querySelector(`#contacts-btn`);
-        element.click();
-        i=8;
-        del();
-        element.closest('.fixed-menu__item').classList.add('fixed-menu__item--active')
-    } else if (direction < 0 && i == 8) {
-        element = document.querySelector(`#order-btn`);
-        element.click();
-        i=7;
-        del();
-        element.closest('.fixed-menu__item').classList.add('fixed-menu__item--active')
-    } 
-    console.log('scroll '+i)
-  } 
-
-
-const el = document.querySelector('.wrapper');
-// onwheel = setTimeout(scr, 400)
-el.onwheel = scr;
-
-
-// $(document).ready(function(){
-//     $('.wrapper').bxSlider( {
-//         mode: 'vertical',
-//         infiniteLoop: 'false',
-//         keyboardEnabled: true,
-
-//     });
-//   });

@@ -2,13 +2,18 @@ $black: #292929;
 $body: #666666;
 $green: #497870;
 
-.reviews {
+.reviews__wrap {
     text-align: center;
     padding: 63px 0;
     background: url(../../img/reviews-section/reviews-berries.png) 97% 10%/136px no-repeat;
-    height: 100vh;
-    min-height: 650px;
-    &::after {
+    height: 100%;
+    min-height: 36.11rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    &::before {
         content: "";
         position: absolute;
         width: 20rem;
@@ -17,7 +22,30 @@ $green: #497870;
         background-repeat: no-repeat;
         background-attachment: local;
         left: 0;
-        top: 150rem;
+        bottom: -10rem;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        width: 10rem;
+        height: 15rem;
+        background-image: url(../../img/reviews-section/berries.png);
+        background-repeat: no-repeat;
+        left: 0rem;
+        bottom: -10rem;
+    }
+    .container {
+        position: relative;
+        // &::after {
+        //     content: "";
+        //     position: absolute;
+        //     width: 10rem;
+        //     height: 15rem;
+        //     background-image: url(../../img/reviews-section/berries.png);
+        //     background-repeat: no-repeat;
+        //     left: -5rem;
+        //     bottom: -18rem;
+        // }
     }
 }
 .reviews__head {
@@ -73,10 +101,12 @@ $green: #497870;
 
 .reviews__list {
     margin-top: 15px;
+    position: relative;
     li {
         margin-right: 6px;
         display: inline-block;
     }
+    
 }
 .reviews__link-img {
     border-radius: 50%;
@@ -111,22 +141,19 @@ $green: #497870;
 
 
 @media (max-width:768px) {
-    .reviews {
+    .reviews__wrap {
         text-align: center;
         padding: 63px 0;
         display: flex;
         flex-direction: column;
         justify-content: center;
         background: url(../../img/reviews-section/reviews-berries.png) 97% 0%/136px no-repeat;
-        min-height: 1000px;
+        // min-height: 1000px;
         .container {
             padding: 0 1.2rem;
         }
         &::after {
-            background-image: url(../../img/reviews-section/pattern.png);
-            width: 5rem;
-            height: 15.66rem;
-            top: 212rem;
+            
         }
     }
     .reviews__block {
@@ -153,15 +180,15 @@ $green: #497870;
 
 @media (max-width:480px) {
     .reviews {
+        position: relative;
         padding: 0 0.5rem;
-        min-height: 44.44rem;
+        // min-height: 44.44rem;
         background: url(../../img/reviews-section/reviews-berries.png) 108% 15%/136px no-repeat;
         .container {
             padding: 0;
         }
         &::after {
-            top: 170rem;
-            background-size: 90%;
+            display: none;
         }
         .reviews__block {
             padding-bottom: 0.4rem;

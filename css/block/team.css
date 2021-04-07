@@ -1,5 +1,5 @@
 .team {
-  height: 100vh;
+  height: 100%;
   min-height: 36.11rem;
 }
 .team .container {
@@ -93,7 +93,6 @@
 
 @media (max-width: 768px) {
   .team {
-    min-height: 55.55rem;
     padding-top: 9.72rem;
   }
 

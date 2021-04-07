@@ -83,4 +83,15 @@ ul li {
 .wrapper {
   overflow: hidden;
   transition: 400ms;
+  height: 100%;
+}
+
+.maincontent {
+  height: 100%;
+  transition: transform 800ms;
+  will-change: transform;
+}
+
+.section {
+  height: 100%;
 }

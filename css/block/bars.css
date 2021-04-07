@@ -1,11 +1,31 @@
-.bars {
+.bars__wrap {
   background: #F8FAF9;
-  height: 100vh;
-  min-height: 36.11rem;
+  height: 100%;
   display: flex;
   padding: 0 1rem;
+  position: relative;
 }
-.bars .container {
+.bars__wrap::before {
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  right: 0;
+  bottom: -5rem;
+  width: 8rem;
+  height: 20rem;
+  background-image: url("../../img/bars/big-leaf.png");
+}
+.bars__wrap::after {
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  right: 0;
+  bottom: -4vw;
+  width: 8rem;
+  height: 7rem;
+  background-image: url("../../img/bars/blackberry.png");
+}
+.bars__wrap .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -125,10 +145,7 @@
     background: url("../../img/bars/bar_sea.png") 49% center/14.5rem no-repeat, url("../../img/bars/leaf-2.png") 18% 20%/4rem no-repeat, url("../../img/bars/leaf-1.png") 75% bottom/5.5rem no-repeat, url("../../img/bars/ellipse-2.png") center 60%/18.5rem no-repeat, url("../../img/bars/ellipse-1.png") center 80%/20rem no-repeat;
   }
 
-  .bars {
-    min-height: 55.55rem;
-  }
-  .bars .container {
+  .bars__wrap .container {
     padding: 0 0.75rem;
   }
 
@@ -165,10 +182,7 @@
   }
 }
 @media (max-width: 480px) {
-  .bars {
-    min-height: 44.44rem;
-  }
-  .bars p {
+  .bars__wrap p {
     max-width: 100%;
   }
 

@@ -112,12 +112,11 @@
   background-position: 96% 44%, right bottom;
   position: relative;
   color: #fff;
-  height: 100vh;
+  height: 100%;
   min-height: 36.11rem;
 }
 @media (max-width: 768px) {
   .bg--blue {
-    min-height: 55.55rem;
     background-image: url("../../img/hello-section/right-leaves-and-berry.png"), url("../../img/hello-section/Батончики.png"), url("../../img/hello-section/leaves.png");
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-size: 20rem, 20rem, 30rem;
@@ -126,7 +125,6 @@
 }
 @media (max-width: 480px) {
   .bg--blue {
-    min-height: 44.44rem;
     background-size: 18rem, 18rem, 18rem;
     background-position: 65% 35%, center 20%, right 20%;
   }

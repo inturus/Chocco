@@ -1,11 +1,16 @@
-.reviews {
+.reviews__wrap {
   text-align: center;
   padding: 63px 0;
   background: url(../../img/reviews-section/reviews-berries.png) 97% 10%/136px no-repeat;
-  height: 100vh;
-  min-height: 650px;
+  height: 100%;
+  min-height: 36.11rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
-.reviews::after {
+.reviews__wrap::before {
   content: "";
   position: absolute;
   width: 20rem;
@@ -14,7 +19,20 @@
   background-repeat: no-repeat;
   background-attachment: local;
   left: 0;
-  top: 150rem;
+  bottom: -10rem;
+}
+.reviews__wrap::after {
+  content: "";
+  position: absolute;
+  width: 10rem;
+  height: 15rem;
+  background-image: url(../../img/reviews-section/berries.png);
+  background-repeat: no-repeat;
+  left: 0rem;
+  bottom: -10rem;
+}
+.reviews__wrap .container {
+  position: relative;
 }
 
 .reviews__head {
@@ -71,6 +89,7 @@
 
 .reviews__list {
   margin-top: 15px;
+  position: relative;
 }
 .reviews__list li {
   margin-right: 6px;
@@ -113,25 +132,17 @@
 }
 
 @media (max-width: 768px) {
-  .reviews {
+  .reviews__wrap {
     text-align: center;
     padding: 63px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     background: url(../../img/reviews-section/reviews-berries.png) 97% 0%/136px no-repeat;
-    min-height: 1000px;
   }
-  .reviews .container {
+  .reviews__wrap .container {
     padding: 0 1.2rem;
   }
-  .reviews::after {
-    background-image: url(../../img/reviews-section/pattern.png);
-    width: 5rem;
-    height: 15.66rem;
-    top: 212rem;
-  }
-
   .reviews__block {
     flex-direction: column;
     max-width: 100%;
@@ -159,16 +170,15 @@
 }
 @media (max-width: 480px) {
   .reviews {
+    position: relative;
     padding: 0 0.5rem;
-    min-height: 44.44rem;
     background: url(../../img/reviews-section/reviews-berries.png) 108% 15%/136px no-repeat;
   }
   .reviews .container {
     padding: 0;
   }
   .reviews::after {
-    top: 170rem;
-    background-size: 90%;
+    display: none;
   }
   .reviews .reviews__block {
     padding-bottom: 0.4rem;
