@@ -1,6 +1,6 @@
 .video {
   min-height: 36.11rem;
-  height: 100vh;
+  height: 100%;
   display: flex;
   align-items: center;
 }
@@ -99,6 +99,26 @@
   height: 390px;
   width: 650px;
   position: relative;
+}
+.video__player::before {
+  content: "";
+  position: absolute;
+  width: 8.94rem;
+  height: 8rem;
+  background-image: url(../../img/video/left-leaf.png);
+  background-repeat: no-repeat;
+  left: -10vw;
+  bottom: -5vw;
+}
+.video__player::after {
+  content: "";
+  position: absolute;
+  width: 8.94rem;
+  height: 8rem;
+  background-image: url(../../img/video/right-leaf.png);
+  background-repeat: no-repeat;
+  right: -15vw;
+  top: -5vw;
 }
 .video__player--active .video__splash {
   display: none;

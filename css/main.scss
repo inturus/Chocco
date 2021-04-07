@@ -1,17 +1,5 @@
-@import url("block/header.css");
-@import url('block/hello.css');
-@import url('block/why.css');
-@import url('block/bars.css');
-@import url('block/reviews.css');
-@import url('block/video.css');
-@import url('block/order.css');
-@import url('block/contacts.css');
-@import url('block/team.css');
-@import url('block/product.css');
-@import url('block/footer.css');
-@import url('block/fixed-menu.css');
-@import url('block/modal-menu.css');
-@import url('block/modal-window.css');
+@import "blocks/*.scss";
+
 
 $black: #292929;
 $body: #666666;

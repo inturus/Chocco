@@ -6,15 +6,26 @@
     position: relative;
     background: url('../../img/product/Slider.jpg')center center no-repeat;
     @media (max-width: 768px) {
-        min-height: 55.55rem;
+        // min-height: 55.55rem;
     }
     @media (max-width: 480px) {
-        min-height: 44.44rem;
+        // min-height: 44.44rem;
     }
 }
 
 .product__container {
     position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            width: 6rem;
+            height: 7rem;
+            background-image: url(../../img/team-section/raspberry.png);
+            background-repeat: no-repeat;
+            background-position: center center;
+            left: 0;
+            top: -4rem;
+        }
 }
 .product__head {
     position: absolute;
@@ -50,7 +61,7 @@
     cursor: pointer;
     color: white;
     line-height: 1.3rem;
-    backdrop-filter: brightness(50%);
+    backdrop-filter: blur(10px);
     transition: 400ms;
     opacity: 0;
     &_active {

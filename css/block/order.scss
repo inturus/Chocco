@@ -26,14 +26,26 @@ textarea:focus, input[type=text]:focus, input[type=number]:focus {
     min-height: 36.1rem;
     display: flex;
     align-items: center;
+    position: relative;
     &::before {
         content: '';
         position: absolute;
         display: block;
-        width: 10.8rem;
-        background: url('../../img/cta-section/leaf-berry.png');
+        width: 10rem;
+        height: 15rem;
+        background: url('../../img/cta-section/leaf-berry.png') no-repeat;
+        top: -15%;
+        right: 0;
     }
-
+    @media (max-width: 480px) {
+        &::before {
+            width: 7rem;
+            height: 10.5rem;
+            background-size: 100%;
+            right: -2rem;
+            top: -4rem;
+        }
+    }
 }
 .cta .container {
     padding: 2.8rem 0 4.7rem;
@@ -154,7 +166,7 @@ textarea {
               flex-direction: column;
               justify-content: flex-start;
               align-items: center;
-          min-height: 55.5rem;
+        //   min-height: 55.5rem;
           background: url('../../img/cta-section/order-gb.png') 50%/cover no-repeat;
         }
         .form {
@@ -177,7 +189,7 @@ textarea {
   
     @media (max-width:480px) {
         .cta {
-            min-height: 44.44rem;
+            // min-height: 44.44rem;    
         }
         .cta__head {
             font-size: 2.22rem;

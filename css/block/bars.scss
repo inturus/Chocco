@@ -1,17 +1,38 @@
 .bars {
     background: #F8FAF9;
     height: 100%;
-    min-height: 36.11rem;
+    // min-height: 36.11rem;
     display: flex;
+    padding: 0 1rem; position: relative;
     
-    padding: 0 1rem;
     .container {
         display: flex;
         align-items: center;
         justify-content: space-between;
         position: relative;
         max-width: 59rem;
+        &::before {
+            content: '';
+            position: absolute;
+            background-repeat: no-repeat;
+            right: -5rem;
+            bottom: -5rem;
+            width: 8rem;
+            height: 20rem;
+            background-image: url('../../img/bars/big-leaf.png');
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            background-repeat: no-repeat;
+            right: -5vw;
+            bottom: -4vw;
+            width: 8rem;
+            height: 7rem;
+            background-image: url('../../img/bars/blackberry.png');
+        }
     }
+    
 }
 
 .bars__svg {
@@ -142,7 +163,7 @@
          url('../../img/bars/ellipse-1.png') center 80%/20rem no-repeat;
     }
     .bars {
-        min-height: 55.55rem;
+        // min-height: 55.55rem;
         .container {
             padding: 0 0.75rem;
         }
@@ -178,7 +199,7 @@
 
 @media (max-width: 480px) {
     .bars {
-        min-height: 44.44rem;
+        // min-height: 44.44rem;
         p {
             max-width: 100%;
         }

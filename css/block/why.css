@@ -2,22 +2,33 @@
   background: url("../../img/why-section/leaf-why.png") 0 50%/10.61rem no-repeat;
   height: 100%;
   min-height: 36.11rem;
-  position: relative;
-}
-.why .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 .why::after {
   content: "";
   position: absolute;
   width: 8.94rem;
   height: 17.5rem;
-  background-image: url(../../img/why-section/raspberry.png);
+  background-image: url("../../img/why-section/raspberry.png");
   background-repeat: no-repeat;
   background-position: center center;
-  top: 0;
+  top: 78rem;
+  left: 0;
+}
+@media (max-width: 768px) {
+  .why::after {
+    top: 83rem;
+  }
+}
+@media (max-width: 480px) {
+  .why::after {
+    display: none;
+  }
+}
+.why .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
 }
 
 .why__head {
@@ -76,18 +87,17 @@
 @media (max-width: 768px) {
   .why {
     background: url("../../img/why-section/leaf-why.png") 0 10%/191px no-repeat;
-    min-height: 55.55rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+  .why::after {
+    top: 80rem;
   }
   .why .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  .why::after {
-    top: 98rem;
   }
 
   .svg-dots {
@@ -101,7 +111,6 @@
 @media (max-width: 480px) {
   .why {
     background: none;
-    min-height: 44.44rem;
   }
   .why .container {
     padding: 0 0.5rem;

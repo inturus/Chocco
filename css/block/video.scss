@@ -1,6 +1,6 @@
 .video {
     min-height: 36.11rem;
-    height: 100vh;
+    height: 100%;
     display: flex;
     align-items: center;
     .container {
@@ -83,6 +83,26 @@ margin-bottom: 1.66rem;
     height: 390px;
     width: 650px;
     position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 8.94rem;
+        height: 8rem;
+        background-image: url(../../img/video/left-leaf.png);
+        background-repeat: no-repeat;
+        left: -10vw;
+        bottom: -5vw;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        width: 8.94rem;
+        height: 8rem;
+        background-image: url(../../img/video/right-leaf.png);
+        background-repeat: no-repeat;
+        right: -15vw;
+        top: -5vw;
+    }
     &--active {
                 .video__splash {
                     display: none;
