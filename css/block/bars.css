@@ -5,32 +5,32 @@
   padding: 0 1rem;
   position: relative;
 }
+.bars::before {
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  right: 0;
+  bottom: -5rem;
+  width: 8rem;
+  height: 20rem;
+  background-image: url("../../img/bars/big-leaf.png");
+}
+.bars::after {
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  right: 0;
+  bottom: -4vw;
+  width: 8rem;
+  height: 7rem;
+  background-image: url("../../img/bars/blackberry.png");
+}
 .bars .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: relative;
   max-width: 59rem;
-}
-.bars .container::before {
-  content: "";
-  position: absolute;
-  background-repeat: no-repeat;
-  right: -5rem;
-  bottom: -5rem;
-  width: 8rem;
-  height: 20rem;
-  background-image: url("../../img/bars/big-leaf.png");
-}
-.bars .container::after {
-  content: "";
-  position: absolute;
-  background-repeat: no-repeat;
-  right: -5vw;
-  bottom: -4vw;
-  width: 8rem;
-  height: 7rem;
-  background-image: url("../../img/bars/blackberry.png");
 }
 
 .bars__svg {

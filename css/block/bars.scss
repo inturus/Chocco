@@ -3,7 +3,28 @@
     height: 100%;
     // min-height: 36.11rem;
     display: flex;
-    padding: 0 1rem; position: relative;
+    padding: 0 1rem;
+     position: relative;
+     &::before {
+        content: '';
+        position: absolute;
+        background-repeat: no-repeat;
+        right: 0;
+        bottom: -5rem;
+        width: 8rem;
+        height: 20rem;
+        background-image: url('../../img/bars/big-leaf.png');
+    }
+     &::after {
+        content: '';
+        position: absolute;
+        background-repeat: no-repeat;
+        right: 0;
+        bottom: -4vw;
+        width: 8rem;
+        height: 7rem;
+        background-image: url('../../img/bars/blackberry.png');
+    }
     
     .container {
         display: flex;
@@ -11,26 +32,6 @@
         justify-content: space-between;
         position: relative;
         max-width: 59rem;
-        &::before {
-            content: '';
-            position: absolute;
-            background-repeat: no-repeat;
-            right: -5rem;
-            bottom: -5rem;
-            width: 8rem;
-            height: 20rem;
-            background-image: url('../../img/bars/big-leaf.png');
-        }
-        &::after {
-            content: '';
-            position: absolute;
-            background-repeat: no-repeat;
-            right: -5vw;
-            bottom: -4vw;
-            width: 8rem;
-            height: 7rem;
-            background-image: url('../../img/bars/blackberry.png');
-        }
     }
     
 }
