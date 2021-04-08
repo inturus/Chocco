@@ -10,6 +10,8 @@ $green: #497870;
     min-height: 36.11rem;
     display: flex;
     align-items: center;
+    justify-content: center;
+    align-items: center;
     position: relative;
     &::before {
         content: "";
@@ -25,7 +27,7 @@ $green: #497870;
     &::after {
         content: "";
         position: absolute;
-        width: 10rem;
+        width: 8rem;
         height: 15rem;
         background-image: url(../../img/reviews-section/berries.png);
         background-repeat: no-repeat;
@@ -177,11 +179,11 @@ $green: #497870;
 }
 
 @media (max-width:480px) {
-    .reviews {
+    .reviews__wrap {
         position: relative;
         padding: 0 0.5rem;
         // min-height: 44.44rem;
-        background: url(../../img/reviews-section/reviews-berries.png) 108% 15%/136px no-repeat;
+        background: url(../../img/reviews-section/reviews-berries.png) 100% 0/136px no-repeat;
         .container {
             padding: 0;
         }

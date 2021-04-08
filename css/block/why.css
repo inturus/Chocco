@@ -98,14 +98,14 @@
   }
 }
 @media (max-width: 480px) {
-  .why {
+  .why__wrap {
     background: none;
   }
-  .why .container {
-    padding: 0 0.5rem;
-  }
-  .why::after {
+  .why__wrap::after {
     display: none;
+  }
+  .why__wrap .container {
+    padding: 0 0.5rem;
   }
 
   .why__list {

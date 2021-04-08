@@ -80,9 +80,9 @@ $body: #666666;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        &::after {
-                // top: 80rem;
-            }
+        // &::after {
+                
+        //     }
         .container {
             display: flex;
             flex-direction: column;
@@ -97,13 +97,13 @@ $body: #666666;
     }
 }
 @media (max-width:480px) {
-    .why {
+    .why__wrap {
         background: none;
-        .container {
-            padding: 0 0.5rem;
-        }
         &::after {
             display: none;
+        }
+        .container {
+            padding: 0 0.5rem;
         }
     }
     .why__list {
