@@ -54,6 +54,11 @@ $green: #497870;
     line-height: 58px;
     margin-bottom: 32px;
 }
+@media (max-width: 480px) {
+    .reviews__head{
+        margin-bottom:0;
+    }
+}
 .reviews__block {
     background: url(../../img/reviews-section/reviews-leaf.png) right 5%/127px no-repeat, #F8FAF9;
     position: relative;

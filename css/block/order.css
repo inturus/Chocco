@@ -193,7 +193,7 @@ textarea {
 @media (max-width: 480px) {
   .cta__head {
     font-size: 2.22rem;
-    margin-bottom: 2.16rem;
+    margin-bottom: 0;
   }
 
   .form__col:last-child .form__row:nth-child(2) {
