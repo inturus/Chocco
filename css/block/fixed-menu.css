@@ -39,11 +39,19 @@
 }
 .fixed-menu__link::before {
   content: "";
+  position: absolute;
   display: block;
-  width: 8px;
-  height: 8px;
+  width: 7px;
+  height: 7px;
   border-radius: 50%;
   background: white;
-  transform: translate(40%, 40%);
+  top: 25%;
+  left: 25%;
   box-shadow: 0 0px 7px 2px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (orientation: landscape) {
+  .fixed-menu {
+    display: none;
+  }
 }

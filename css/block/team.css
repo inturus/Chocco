@@ -124,6 +124,10 @@
   }
 }
 @media (max-width: 480px) {
+  .team {
+    padding-top: 5rem;
+  }
+
   .team__photo {
     width: 7.66rem;
   }

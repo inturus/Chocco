@@ -20,7 +20,7 @@
         position: absolute;
         background-repeat: no-repeat;
         right: 0;
-        bottom: -4vw;
+        bottom: -4rem;
         width: 8rem;
         height: 7rem;
         background-image: url('../../img/bars/blackberry.png');
@@ -200,7 +200,6 @@
 
 @media (max-width: 480px) {
     .bars__wrap {
-        // min-height: 44.44rem;
         p {
             max-width: 100%;
         }
@@ -255,6 +254,12 @@
     }
     .bx-next {
         background: url('../../img/bars/arr-next.png') no-repeat !important;
+    }
+}
+
+@media screen and (orientation: landscape) {
+    .bars__wrap {
+        min-height: 0;
     }
 }
 

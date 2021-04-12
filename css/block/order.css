@@ -145,6 +145,7 @@ textarea {
   color: #365A49;
   font-size: 0.8rem;
   padding: 1.1rem 2.2rem;
+  outline: none;
   background: #497870;
   color: white;
 }

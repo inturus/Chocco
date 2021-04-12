@@ -133,3 +133,33 @@ $body: #666666;
         font-size: 2.2rem;
     }
 }
+@media screen and (orientation: landscape) {
+    .why__head {
+        margin-top: 1rem;
+        font-size: 1.2rem;
+    }
+    .why__list {
+        margin-top: 0.5rem;
+    }
+    .why__item .why__item-head {
+        margin-top: 0.2rem;
+    }
+    .why__item .why__item-desc {
+        margin-top: 0.1rem;
+        font-size: 0.8rem;
+    }
+    .why__svg-cont {
+        height: 5rem;
+        width: 5rem;
+    }
+    .why__svg {
+        width: 2rem;
+        transform: translate(73%, -19%);
+    }
+    .why__wrap {
+        min-height: 0;
+        &:after {
+            // bottom: 6.5rem;
+        }
+    }
+}

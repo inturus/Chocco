@@ -88,6 +88,9 @@
         display: none;
     }
 }
+
+
+
 @media (max-width:480px) {
     .hello {
         margin-top: 17rem;
@@ -99,6 +102,7 @@
         font-size: 2.22rem;
         line-height: 2rem;
     }
+    
 }
 .bg--blue {
     background-color: #61C4D9;
@@ -122,5 +126,18 @@
     @media (max-width:480px) {
         background-size: 18rem, 18rem,18rem;
         background-position:65% 35%, center 20%, right 20%;
+    }
+}
+@media screen and (orientation: landscape) {
+    .hello {
+        margin-top: 0;
+        padding-bottom: 0;
+        min-height: 100%;
+    }
+    .hello__pref-list {
+        display: none;
+    }
+    .bg--blue {
+        min-height:0;
     }
 }

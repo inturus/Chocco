@@ -2,7 +2,7 @@
   text-align: center;
   position: relative;
 }
-.contacts .container {
-  width: 100vw;
-  height: 100vh;
+.contacts .container-map {
+  width: 100%;
+  height: 100%;
 }

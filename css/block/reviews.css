@@ -173,6 +173,11 @@
     text-align: center;
   }
 }
+@media (max-width: 768px) and (orientation: landscape) {
+  .reviews__wrap {
+    padding: 0;
+  }
+}
 @media (max-width: 480px) {
   .reviews__wrap {
     position: relative;
@@ -196,7 +201,7 @@
     font-weight: 500;
     color: #292929;
     margin-top: 0.6rem;
-    margin-bottom: 2.7rem;
+    margin-bottom: 1.5rem;
     display: block;
   }
   .reviews__wrap .reviews__name {

@@ -59,11 +59,13 @@ ul li {
 	font-size:16px;
     padding: 1.11rem 2.22rem;
     transition: 0.4s;
+    outline: none;
     &:hover {
         color:#497870;
     }
 }
 .order--slider {
+    outline: none;
     background: #497870;
     color: white;
     &:hover {
