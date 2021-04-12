@@ -129,19 +129,3 @@
     background-position: 65% 35%, center 20%, right 20%;
   }
 }
-
-@media screen and (orientation: landscape) {
-  .hello {
-    margin-top: 0;
-    padding-bottom: 0;
-    min-height: 100%;
-  }
-
-  .hello__pref-list {
-    display: none;
-  }
-
-  .bg--blue {
-    min-height: 0;
-  }
-}
