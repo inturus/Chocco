@@ -188,16 +188,25 @@ textarea {
     }
   
     @media (max-width:480px) {
+        .form__col:first-child {
+            margin-bottom: 0.5rem;
+        }
+        .form__col input {
+            min-height: 2.2rem;
+        }
         .cta__head {
             font-size: 2.22rem;
             margin-bottom: 0;
+            line-height: 2.2rem;
         }
       .form__col:last-child {
           .form__row:nth-child(2){
             text-align: center;
+            margin-bottom: 0.5rem;
           }
           .form__row:nth-child(3) {
               text-align: center;
+              margin-bottom: 0.5rem;
           }
       }
         
